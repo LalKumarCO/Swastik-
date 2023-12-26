@@ -1,0 +1,2635 @@
+{
+    "label": "Quality Specification Graphical",
+    "mobileDisabled": false,
+    "state": {
+        "dataSourceLinksInfo": {
+            "enableAutomaticLinking": true,
+            "excludeRelationships": [],
+            "links": []
+        },
+        "filters": [
+            {
+                "dataset": {
+                    "id": "0Fb2w000000OWUqCAO",
+                    "name": "QualitySpecification",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product__c.Name"
+                ],
+                "label": "Products",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000OWUqCAO",
+                    "name": "QualitySpecification",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                },
+                "dependent": true,
+                "fields": [
+                    "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name"
+                ],
+                "label": "Vendors",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000OWUqCAO",
+                    "name": "QualitySpecification",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                },
+                "dependent": true,
+                "fields": [
+                    "Quality_Specification__c.Name"
+                ],
+                "label": "Quality Specifications",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000OWUqCAO",
+                    "name": "QualitySpecification",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                },
+                "dependent": true,
+                "fields": [
+                    "Custom_Opportunity_Product__c.Opportunity__c.RR_Year__c"
+                ],
+                "label": "Year",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000OWUqCAO",
+                    "name": "QualitySpecification",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                },
+                "dependent": true,
+                "fields": [
+                    "Custom_Opportunity_Product__c.Opportunity__c.RR_Date_Formula__c"
+                ],
+                "label": "Month",
+                "locked": false,
+                "operator": "in"
+            }
+        ],
+        "gridLayouts": [
+            {
+                "name": "Default",
+                "numColumns": 50,
+                "pages": [
+                    {
+                        "label": "Untitled",
+                        "name": "8b985b49-6009-42c9-b291-ef5ac07c6b9d",
+                        "navigationHidden": false,
+                        "widgets": [
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "text_1",
+                                "row": 0,
+                                "rowspan": 1,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 6,
+                                "column": 0,
+                                "name": "filterpanel_1",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 6,
+                                "column": 6,
+                                "name": "filterpanel_2",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 7,
+                                "column": 12,
+                                "name": "filterpanel_3",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 25,
+                                "column": 0,
+                                "name": "chart_1",
+                                "row": 2,
+                                "rowspan": 9,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 25,
+                                "column": 25,
+                                "name": "chart_2",
+                                "row": 2,
+                                "rowspan": 9,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 25,
+                                "column": 0,
+                                "name": "chart_5",
+                                "row": 11,
+                                "rowspan": 8,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "chart_12",
+                                "row": 19,
+                                "rowspan": 8,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 25,
+                                "column": 25,
+                                "name": "chart_14",
+                                "row": 11,
+                                "rowspan": 8,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 41,
+                                "name": "link_1",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 8,
+                                "column": 27,
+                                "name": "filterpanel_5",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 8,
+                                "column": 19,
+                                "name": "filterpanel_7",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "rowHeight": "normal",
+                "selectors": [],
+                "style": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "backgroundColor": "#F2F6FA",
+                    "cellSpacingX": 8,
+                    "cellSpacingY": 8,
+                    "fit": "original",
+                    "gutterColor": "#C5D3E0"
+                },
+                "version": 1
+            }
+        ],
+        "layouts": [],
+        "steps": {
+            "Line_Item_Bills__1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Line Item Bills ",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Custom_Opportunity_Product__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {
+                        "QualitySpecification": {
+                            "filters": [
+                                [
+                                    "Custom_Opportunity_Product__c.Average_Score__c",
+                                    [
+                                        0
+                                    ],
+                                    ">"
+                                ]
+                            ]
+                        }
+                    },
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Custom_Opportunity_Product__c.Average_Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Custom_Opportunity_Product__c.Name"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "fontSize": 16,
+                            "subtitleFontSize": 11,
+                            "label": "Line Item Bills ",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Custom_Opportunity_Product__c.Name"
+                            ],
+                            "plots": [
+                                "A"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "compactNumber",
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "QS_Standard_Units_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "QS Standard Units",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Quality_Specification__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Standard_Text__c",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Custom_Opportunity_Product__c.Opportunity__c.Average_Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Quality_Specification__c.Name",
+                                "Standard_Text__c"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": false,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "fontSize": 16,
+                            "subtitleFontSize": 11,
+                            "label": "Standard Units",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Quality_Specification__c.Name",
+                                "Standard_Text__c"
+                            ],
+                            "plots": [
+                                "A"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "compactNumber",
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "QS_Actual_Units_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "QS Actual Units",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Quality_Specification__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Actual_Units__c",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Custom_Opportunity_Product__c.Opportunity__c.Average_Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Quality_Specification__c.Name",
+                                "Actual_Units__c"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "fontSize": 14,
+                            "subtitleFontSize": 11,
+                            "label": "Actual Units ",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Quality_Specification__c.Name",
+                                "Actual_Units__c"
+                            ],
+                            "plots": [
+                                "A"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "compactNumber",
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "Product_Wise_Scoring_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Product Wise Score",
+                "query": {
+                    "aggregateFilters": [
+                        [
+                            "A",
+                            [
+                                0
+                            ],
+                            ">"
+                        ]
+                    ],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Product__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {
+                        "QualitySpecification": {
+                            "filters": [
+                                [
+                                    "Custom_Opportunity_Product__c.Average_Score__c",
+                                    [
+                                        0
+                                    ],
+                                    ">"
+                                ]
+                            ]
+                        }
+                    },
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Custom_Opportunity_Product__c.Average_Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product__c.Name"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "multi",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "fontSize": 16,
+                            "subtitleFontSize": 11,
+                            "label": "Product Wise Score",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Product__c.Name"
+                            ],
+                            "plots": [
+                                "A"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "compactNumber",
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "Product_Average_Scor_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Product Average Score ",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [],
+                    "rowTotals": [],
+                    "sourceFilters": {
+                        "QualitySpecification": {
+                            "filters": [
+                                [
+                                    "Custom_Opportunity_Product__c.Average_Score__c",
+                                    [
+                                        0
+                                    ],
+                                    ">"
+                                ]
+                            ]
+                        }
+                    },
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Custom_Opportunity_Product__c.Average_Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "all"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "centerText": "",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "showMeasureTitle": true,
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "pie",
+                        "title": {
+                            "fontSize": 16,
+                            "subtitleFontSize": 11,
+                            "label": "Product Average Score ",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "inner": 60,
+                        "columnMap": {
+                            "trellis": [],
+                            "dimension": [],
+                            "plots": [
+                                "A"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "centerValueType": "number",
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "compactNumber",
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "Purchase_Reference_W_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Purchase Reference Wise Score",
+                "query": {
+                    "aggregateFilters": [
+                        [
+                            "A",
+                            [
+                                0
+                            ],
+                            ">"
+                        ]
+                    ],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Custom_Opportunity_Product__c.Opportunity__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Custom_Opportunity_Product__c.Opportunity__c.Average_Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Custom_Opportunity_Product__c.Opportunity__c.Name"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "multi",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "fontSize": 16,
+                            "subtitleFontSize": 11,
+                            "label": "Purchase Reference Wise Score",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Custom_Opportunity_Product__c.Opportunity__c.Name"
+                            ],
+                            "plots": [
+                                "A"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "compactNumber",
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "Vendor_Wise_Score_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Vendor Wise Score",
+                "query": {
+                    "aggregateFilters": [
+                        [
+                            "A",
+                            [
+                                0
+                            ],
+                            ">"
+                        ]
+                    ],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Custom_Opportunity_Product__c.Opportunity__c.Average_Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "multi",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "fontSize": 16,
+                            "subtitleFontSize": 11,
+                            "label": "Vendor Wise Score",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name"
+                            ],
+                            "plots": [
+                                "A"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "compactNumber",
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "Average_Score_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Vendor Average Score",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Custom_Opportunity_Product__c.Opportunity__c.Average_Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [
+                                [
+                                    "Custom_Opportunity_Product__c.Average_Score__c",
+                                    [
+                                        0
+                                    ],
+                                    ">"
+                                ]
+                            ],
+                            "groups": [
+                                "all"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "centerText": "",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "showMeasureTitle": true,
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "pie",
+                        "title": {
+                            "fontSize": 16,
+                            "subtitleFontSize": 11,
+                            "label": "Vendor Average Score",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "inner": 60,
+                        "columnMap": {
+                            "trellis": [],
+                            "dimension": [],
+                            "plots": [
+                                "A"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "centerValueType": "number",
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "compactNumber",
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "QS_Standard___Actual_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "QS Standard & Actual Heat map",
+                "query": {
+                    "aggregateFilters": [
+                        [
+                            "A",
+                            [
+                                0
+                            ],
+                            ">"
+                        ]
+                    ],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Actual_Units__c",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Quality_Specification__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Standard_Text__c",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Actual_Units__c",
+                                "Quality_Specification__c.Name",
+                                "Standard_Text__c"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "multi",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "none",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": false,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "highColor": "#009DDF",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "lowColor": "#E2F4FC",
+                        "visualizationType": "heatmap",
+                        "title": {
+                            "fontSize": 16,
+                            "subtitleFontSize": 11,
+                            "label": "QS Standard & Actual Heat Map",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "color": [
+                                "A"
+                            ],
+                            "x": [
+                                "Actual_Units__c"
+                            ],
+                            "y": [
+                                "Quality_Specification__c.Name",
+                                "Standard_Text__c"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "x": {
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": ""
+                        },
+                        "y": {
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": ""
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            }
+        },
+        "widgetStyle": {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#E6ECF2",
+            "borderEdges": [],
+            "borderRadius": 0,
+            "borderWidth": 1
+        },
+        "widgets": {
+            "filterpanel_7": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "QualitySpecification"
+                            },
+                            "field": "Custom_Opportunity_Product__c.Opportunity__c.RR_Year__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_5": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "QualitySpecification"
+                            },
+                            "field": "Custom_Opportunity_Product__c.Opportunity__c.RR_Date_Formula__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "text_1": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "24px",
+                                    "bold": true,
+                                    "italic": true
+                                },
+                                "insert": "Quality Specification Graphical representation "
+                            },
+                            {
+                                "attributes": {
+                                    "align": "center"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "interactions": [],
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "filterpanel_3": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "QualitySpecification"
+                            },
+                            "field": "Quality_Specification__c.Name"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_2": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "QualitySpecification"
+                            },
+                            "field": "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_1": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "QualitySpecification"
+                            },
+                            "field": "Product__c.Name"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "chart_5": {
+                "parameters": {
+                    "autoFitMode": "keepLabels",
+                    "bins": {
+                        "breakpoints": {
+                            "high": 100,
+                            "low": 0
+                        },
+                        "bands": {
+                            "high": {
+                                "color": "#008000",
+                                "label": ""
+                            },
+                            "low": {
+                                "color": "#B22222",
+                                "label": ""
+                            },
+                            "medium": {
+                                "color": "#ffa500",
+                                "label": ""
+                            }
+                        }
+                    },
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": true,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "multi",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "hbar",
+                    "exploreLink": true,
+                    "title": {
+                        "fontSize": 16,
+                        "subtitleFontSize": 11,
+                        "label": "Purchase Reference Wise Score",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "binValues": false,
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "columnMap": {
+                        "trellis": [],
+                        "dimensionAxis": [
+                            "Custom_Opportunity_Product__c.Opportunity__c.Name"
+                        ],
+                        "plots": [
+                            "A"
+                        ]
+                    },
+                    "showActionMenu": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "valueType": "compactNumber",
+                    "measureAxis1": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "theme": "wave",
+                    "step": "Purchase_Reference_W_1",
+                    "compactDecimalDigits": -1,
+                    "dimensionAxis": {
+                        "showTitle": true,
+                        "customSize": "auto",
+                        "showAxis": true,
+                        "title": "",
+                        "icons": {
+                            "useIcons": false,
+                            "iconProps": {
+                                "fit": "cover",
+                                "column": "",
+                                "type": "round"
+                            }
+                        }
+                    },
+                    "applyConditionalFormatting": true
+                },
+                "type": "chart"
+            },
+            "link_1": {
+                "parameters": {
+                    "destinationLink": {
+                        "name": "Quality_Specification"
+                    },
+                    "destinationType": "dashboard",
+                    "fontSize": 16,
+                    "includeState": false,
+                    "text": "Home Page",
+                    "textAlignment": "center",
+                    "textColor": "#670000"
+                },
+                "type": "link"
+            },
+            "chart_14": {
+                "parameters": {
+                    "autoFitMode": "keepLabels",
+                    "centerText": "",
+                    "bins": {
+                        "breakpoints": {
+                            "high": 100,
+                            "low": 0
+                        },
+                        "bands": {
+                            "high": {
+                                "color": "#008000",
+                                "label": ""
+                            },
+                            "low": {
+                                "color": "#B22222",
+                                "label": ""
+                            },
+                            "medium": {
+                                "color": "#ffa500",
+                                "label": ""
+                            }
+                        }
+                    },
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": true,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "showMeasureTitle": true,
+                    "axisMode": "multi",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "pie",
+                    "exploreLink": true,
+                    "title": {
+                        "fontSize": 16,
+                        "subtitleFontSize": 11,
+                        "label": "Vendor Average Score",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "binValues": false,
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "inner": 60,
+                    "columnMap": {
+                        "trellis": [],
+                        "dimension": [],
+                        "plots": [
+                            "A"
+                        ]
+                    },
+                    "showActionMenu": true,
+                    "centerValueType": "number",
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "valueType": "compactNumber",
+                    "measureAxis1": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "theme": "wave",
+                    "step": "Average_Score_1",
+                    "compactDecimalDigits": -1,
+                    "dimensionAxis": {
+                        "showTitle": true,
+                        "customSize": "auto",
+                        "showAxis": true,
+                        "title": "",
+                        "icons": {
+                            "useIcons": false,
+                            "iconProps": {
+                                "fit": "cover",
+                                "column": "",
+                                "type": "round"
+                            }
+                        }
+                    },
+                    "applyConditionalFormatting": true
+                },
+                "type": "chart"
+            },
+            "chart_2": {
+                "parameters": {
+                    "autoFitMode": "keepLabels",
+                    "bins": {
+                        "breakpoints": {
+                            "high": 100,
+                            "low": 0
+                        },
+                        "bands": {
+                            "high": {
+                                "color": "#008000",
+                                "label": ""
+                            },
+                            "low": {
+                                "color": "#B22222",
+                                "label": ""
+                            },
+                            "medium": {
+                                "color": "#ffa500",
+                                "label": ""
+                            }
+                        }
+                    },
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": true,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "multi",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "hbar",
+                    "exploreLink": true,
+                    "title": {
+                        "fontSize": 16,
+                        "subtitleFontSize": 11,
+                        "label": "Product Wise Score",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "binValues": false,
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "columnMap": {
+                        "trellis": [],
+                        "dimensionAxis": [
+                            "Product__c.Name"
+                        ],
+                        "plots": [
+                            "A"
+                        ]
+                    },
+                    "showActionMenu": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "valueType": "compactNumber",
+                    "measureAxis1": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "theme": "wave",
+                    "step": "Product_Wise_Scoring_1",
+                    "compactDecimalDigits": -1,
+                    "dimensionAxis": {
+                        "showTitle": true,
+                        "customSize": "auto",
+                        "showAxis": true,
+                        "title": "",
+                        "icons": {
+                            "useIcons": false,
+                            "iconProps": {
+                                "fit": "cover",
+                                "column": "",
+                                "type": "round"
+                            }
+                        }
+                    },
+                    "applyConditionalFormatting": true
+                },
+                "type": "chart"
+            },
+            "chart_1": {
+                "parameters": {
+                    "autoFitMode": "keepLabels",
+                    "bins": {
+                        "breakpoints": {
+                            "high": 100,
+                            "low": 0
+                        },
+                        "bands": {
+                            "high": {
+                                "color": "#008000",
+                                "label": ""
+                            },
+                            "low": {
+                                "color": "#B22222",
+                                "label": ""
+                            },
+                            "medium": {
+                                "color": "#ffa500",
+                                "label": ""
+                            }
+                        }
+                    },
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": true,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "multi",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "hbar",
+                    "exploreLink": true,
+                    "title": {
+                        "fontSize": 16,
+                        "subtitleFontSize": 11,
+                        "label": "Vendor Wise Score",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "binValues": false,
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "columnMap": {
+                        "trellis": [],
+                        "dimensionAxis": [
+                            "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name"
+                        ],
+                        "plots": [
+                            "A"
+                        ]
+                    },
+                    "showActionMenu": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "valueType": "compactNumber",
+                    "measureAxis1": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "theme": "wave",
+                    "step": "Vendor_Wise_Score_1",
+                    "compactDecimalDigits": -1,
+                    "dimensionAxis": {
+                        "showTitle": true,
+                        "customSize": "auto",
+                        "showAxis": true,
+                        "title": "",
+                        "icons": {
+                            "useIcons": false,
+                            "iconProps": {
+                                "fit": "cover",
+                                "column": "",
+                                "type": "round"
+                            }
+                        }
+                    },
+                    "applyConditionalFormatting": true
+                },
+                "type": "chart"
+            },
+            "chart_12": {
+                "parameters": {
+                    "autoFitMode": "none",
+                    "bins": {
+                        "breakpoints": {
+                            "high": 100,
+                            "low": 0
+                        },
+                        "bands": {
+                            "high": {
+                                "color": "#008000",
+                                "label": ""
+                            },
+                            "low": {
+                                "color": "#B22222",
+                                "label": ""
+                            },
+                            "medium": {
+                                "color": "#ffa500",
+                                "label": ""
+                            }
+                        }
+                    },
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": false,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "multi",
+                    "highColor": "#009DDF",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "lowColor": "#E2F4FC",
+                    "visualizationType": "heatmap",
+                    "exploreLink": true,
+                    "title": {
+                        "fontSize": 16,
+                        "subtitleFontSize": 11,
+                        "label": "QS Standard & Actual Heat Map",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "binValues": false,
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "columnMap": {
+                        "color": [
+                            "A"
+                        ],
+                        "x": [
+                            "Actual_Units__c"
+                        ],
+                        "y": [
+                            "Quality_Specification__c.Name",
+                            "Standard_Text__c"
+                        ]
+                    },
+                    "showActionMenu": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "measureAxis1": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "x": {
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": ""
+                    },
+                    "y": {
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": ""
+                    },
+                    "theme": "wave",
+                    "step": "QS_Standard___Actual_1",
+                    "compactDecimalDigits": -1,
+                    "dimensionAxis": {
+                        "showTitle": true,
+                        "customSize": "auto",
+                        "showAxis": true,
+                        "title": "",
+                        "icons": {
+                            "useIcons": false,
+                            "iconProps": {
+                                "fit": "cover",
+                                "column": "",
+                                "type": "round"
+                            }
+                        }
+                    },
+                    "applyConditionalFormatting": true
+                },
+                "type": "chart"
+            }
+        },
+        "parameters": []
+    },
+    "datasets": [
+        {
+            "id": "0Fb2w000000OWUqCAO",
+            "label": "QualitySpecification",
+            "name": "QualitySpecification",
+            "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+        }
+    ]
+}

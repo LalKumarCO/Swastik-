@@ -1,0 +1,1536 @@
+{
+    "label": "Quality Specification",
+    "mobileDisabled": false,
+    "state": {
+        "dataSourceLinksInfo": {
+            "enableAutomaticLinking": true,
+            "excludeRelationships": [],
+            "links": []
+        },
+        "filters": [
+            {
+                "dataset": {
+                    "id": "0Fb2w000000OWUqCAO",
+                    "name": "QualitySpecification",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product__c.Name"
+                ],
+                "label": "Products",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000OWUqCAO",
+                    "name": "QualitySpecification",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                },
+                "dependent": true,
+                "fields": [
+                    "Quality_Specification__c.Name"
+                ],
+                "label": "Quality Specification ",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000OWUqCAO",
+                    "name": "QualitySpecification",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                },
+                "dependent": true,
+                "fields": [
+                    "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name"
+                ],
+                "label": "Vendors",
+                "locked": false,
+                "operator": "in"
+            }
+        ],
+        "gridLayouts": [
+            {
+                "name": "Default",
+                "numColumns": 50,
+                "pages": [
+                    {
+                        "label": "Untitled",
+                        "name": "1338158a-87bd-431e-9aa0-f034455b5aa1",
+                        "navigationHidden": false,
+                        "widgets": [
+                            {
+                                "colspan": 9,
+                                "column": 0,
+                                "name": "filterpanel_1",
+                                "row": 0,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 9,
+                                "name": "filterpanel_2",
+                                "row": 0,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "table_1",
+                                "row": 2,
+                                "rowspan": 14,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "text_1",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 41,
+                                "name": "link_1",
+                                "row": 0,
+                                "rowspan": 1,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "text_3",
+                                "row": 16,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "table_2",
+                                "row": 17,
+                                "rowspan": 14,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 18,
+                                "name": "filterpanel_3",
+                                "row": 0,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "rowHeight": "normal",
+                "selectors": [],
+                "style": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "backgroundColor": "#F2F6FA",
+                    "cellSpacingX": 8,
+                    "cellSpacingY": 8,
+                    "fit": "original",
+                    "gutterColor": "#C5D3E0"
+                },
+                "version": 1
+            }
+        ],
+        "layouts": [],
+        "steps": {
+            "QS_Tabel_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "QS Tabel",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Product__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Custom_Opportunity_Product__c.Opportunity__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Custom_Opportunity_Product__c.Opportunity__c.Opportunity_File_Link__c",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Custom_Opportunity_Product__c.Opportunity__c.Avg_Score_text__c",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Custom_Opportunity_Product__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Quality_Specification__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "File_Link",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Standard_Text__c",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Actual_Units__c",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {
+                        "QualitySpecification": {
+                            "filters": [
+                                [
+                                    "RecordTypeId",
+                                    [
+                                        "0122w000001rffzAAA"
+                                    ],
+                                    "in"
+                                ]
+                            ]
+                        }
+                    },
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "sum",
+                                        "Score__c"
+                                    ],
+                                    "name": "C"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product__c.Name",
+                                "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name",
+                                "Custom_Opportunity_Product__c.Opportunity__c.Name",
+                                "Custom_Opportunity_Product__c.Opportunity__c.Opportunity_File_Link__c",
+                                "Custom_Opportunity_Product__c.Opportunity__c.Avg_Score_text__c",
+                                "Custom_Opportunity_Product__c.Name",
+                                "Quality_Specification__c.Name",
+                                "File_Link",
+                                "Standard_Text__c",
+                                "Actual_Units__c"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {},
+                    "parameters": {
+                        "borderColor": "#a8b7c7",
+                        "borderWidth": 1,
+                        "cell": {
+                            "backgroundColor": "#ffffff",
+                            "fontColor": "#16325c",
+                            "fontSize": 12,
+                            "textWrap": false
+                        },
+                        "collapsible": false,
+                        "columnProperties": {
+                            "File_Link": {
+                                "parameters": {
+                                    "alignment": "left",
+                                    "styles": {
+                                        "linkColor": "#006dcc"
+                                    }
+                                },
+                                "type": "text"
+                            }
+                        },
+                        "columns": [
+                            "C",
+                            "Product__c.Name",
+                            "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name",
+                            "Custom_Opportunity_Product__c.Opportunity__c.Name",
+                            "Custom_Opportunity_Product__c.Opportunity__c.Opportunity_File_Link__c",
+                            "Custom_Opportunity_Product__c.Opportunity__c.Avg_Score_text__c",
+                            "Custom_Opportunity_Product__c.Name",
+                            "Quality_Specification__c.Name",
+                            "File_Link",
+                            "Standard_Text__c",
+                            "Actual_Units__c"
+                        ],
+                        "customBulkActions": [],
+                        "header": {
+                            "backgroundColor": "#16325c",
+                            "fontColor": "#ffffff",
+                            "fontSize": 12,
+                            "textWrap": true
+                        },
+                        "innerMajorBorderColor": "#54698d",
+                        "innerMinorBorderColor": "#a8b7c7",
+                        "interactions": [],
+                        "mode": "fittocontainer",
+                        "numberOfFrozenColumns": 5,
+                        "numberOfLines": 1,
+                        "pivoted": false,
+                        "showActionMenu": true,
+                        "showRowIndexColumn": false,
+                        "totals": true,
+                        "verticalPadding": 8
+                    },
+                    "type": "table"
+                }
+            },
+            "QS_Tabular_Standard__1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "QS Tabular Standard Units ",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Product__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Quality_Specification__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Standard_Text__c",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Max_Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product__c.Name",
+                                "Quality_Specification__c.Name",
+                                "Standard_Text__c"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {},
+                    "parameters": {
+                        "borderColor": "#e0e5ee",
+                        "borderWidth": 1,
+                        "cell": {
+                            "backgroundColor": "#FFFFFF",
+                            "fontColor": "#16325c",
+                            "fontSize": 12,
+                            "textWrap": true
+                        },
+                        "columnProperties": {
+                            "A": {
+                                "parameters": {
+                                    "alignment": "right"
+                                },
+                                "type": "text"
+                            }
+                        },
+                        "columns": [
+                            "A",
+                            "Product__c.Name",
+                            "Quality_Specification__c.Name",
+                            "Standard_Text__c"
+                        ],
+                        "customBulkActions": [],
+                        "header": {
+                            "backgroundColor": "#f4f6f9",
+                            "fontColor": "#16325c",
+                            "fontSize": 12,
+                            "textWrap": true
+                        },
+                        "innerMajorBorderColor": "#a8b7c7",
+                        "innerMinorBorderColor": "#e0e5ee",
+                        "interactions": [],
+                        "mode": "fittocontainer",
+                        "numberOfFrozenColumns": 2,
+                        "numberOfLines": 1,
+                        "pivoted": false,
+                        "showActionMenu": true,
+                        "showRowIndexColumn": false,
+                        "totals": true,
+                        "verticalPadding": 8
+                    },
+                    "type": "table"
+                }
+            },
+            "Vendor_Wise_Score_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Vendor Wise Score",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "multi",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": false,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "fontSize": 16,
+                            "subtitleFontSize": 11,
+                            "label": "Vendors Wise Average Score",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name"
+                            ],
+                            "plots": [
+                                "A"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "compactNumber",
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "Vendors",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "Average_Score_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Average Score",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Custom_Opportunity_Product__c.Average_Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "all"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "centerText": "",
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "showMeasureTitle": true,
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "pie",
+                        "title": {
+                            "fontSize": 14,
+                            "subtitleFontSize": 11,
+                            "label": "",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "inner": 60,
+                        "columnMap": {
+                            "trellis": [],
+                            "dimension": [],
+                            "plots": [
+                                "A"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "centerValueType": "number",
+                        "valueType": "compactNumber",
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "Product_Wise_Avg_Sco_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Product Wise Avg Score",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Product__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Custom_Opportunity_Product__c.Average_Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product__c.Name"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "multi",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": false,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "fontSize": 16,
+                            "subtitleFontSize": 11,
+                            "label": "Product Wise Average Score ",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Product__c.Name"
+                            ],
+                            "plots": [
+                                "A"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "compactNumber",
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "Products",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "Purchase_reference_S_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Purchase reference Score ",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Custom_Opportunity_Product__c.Opportunity__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Custom_Opportunity_Product__c.Opportunity__c.Average_Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Custom_Opportunity_Product__c.Opportunity__c.Name"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "multi",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": false,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "fontSize": 16,
+                            "subtitleFontSize": 11,
+                            "label": "Purchase Reference Score",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Custom_Opportunity_Product__c.Opportunity__c.Name"
+                            ],
+                            "plots": [
+                                "A"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "compactNumber",
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "Avg Score",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "Purchase Reference",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "HeatMap_Score_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000OWUqCAO",
+                        "label": "QualitySpecification",
+                        "name": "QualitySpecification",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "HeatMap Score",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Quality_Specification__c.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Standard_Text__c",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Actual_Units__c",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Quality_Specification__c.Name",
+                                "Standard_Text__c",
+                                "Actual_Units__c"
+                            ],
+                            "joins": [],
+                            "name": "QualitySpecification"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "multi",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": false,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "highColor": "#009DDF",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "lowColor": "#E2F4FC",
+                        "visualizationType": "heatmap",
+                        "title": {
+                            "fontSize": 14,
+                            "subtitleFontSize": 11,
+                            "label": "QS Heat Map",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "color": [
+                                "A"
+                            ],
+                            "x": [
+                                "Actual_Units__c"
+                            ],
+                            "y": [
+                                "Quality_Specification__c.Name",
+                                "Standard_Text__c"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "x": {
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "Actual Units"
+                        },
+                        "y": {
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "QS & Standard Units"
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            }
+        },
+        "widgetStyle": {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#E6ECF2",
+            "borderEdges": [],
+            "borderRadius": 0,
+            "borderWidth": 1
+        },
+        "widgets": {
+            "table_1": {
+                "parameters": {
+                    "borderColor": "#a8b7c7",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "#ffffff",
+                        "fontColor": "#16325c",
+                        "fontSize": 12,
+                        "textWrap": false
+                    },
+                    "collapsible": false,
+                    "columnProperties": {
+                        "File_Link": {
+                            "parameters": {
+                                "alignment": "left",
+                                "styles": {
+                                    "linkColor": "#006dcc"
+                                }
+                            },
+                            "type": "text"
+                        }
+                    },
+                    "columns": [
+                        "C",
+                        "Product__c.Name",
+                        "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Name",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Opportunity_File_Link__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Avg_Score_text__c",
+                        "Custom_Opportunity_Product__c.Name",
+                        "Quality_Specification__c.Name",
+                        "File_Link",
+                        "Standard_Text__c",
+                        "Actual_Units__c"
+                    ],
+                    "customBulkActions": [],
+                    "exploreLink": true,
+                    "header": {
+                        "backgroundColor": "#16325c",
+                        "fontColor": "#ffffff",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "innerMajorBorderColor": "#54698d",
+                    "innerMinorBorderColor": "#a8b7c7",
+                    "interactions": [],
+                    "mode": "fittocontainer",
+                    "numberOfFrozenColumns": 5,
+                    "numberOfLines": 1,
+                    "pivoted": false,
+                    "showActionMenu": true,
+                    "showRowIndexColumn": false,
+                    "step": "QS_Tabel_1",
+                    "totals": true,
+                    "verticalPadding": 8,
+                    "evenRowColor": null,
+                    "oddRowColor": null
+                },
+                "type": "table"
+            },
+            "table_2": {
+                "parameters": {
+                    "borderColor": "#e0e5ee",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "#FFFFFF",
+                        "fontColor": "#16325c",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "columnProperties": {
+                        "A": {
+                            "parameters": {
+                                "alignment": "right"
+                            },
+                            "type": "text"
+                        }
+                    },
+                    "columns": [
+                        "A",
+                        "Product__c.Name",
+                        "Quality_Specification__c.Name",
+                        "Standard_Text__c"
+                    ],
+                    "customBulkActions": [],
+                    "exploreLink": true,
+                    "header": {
+                        "backgroundColor": "#f4f6f9",
+                        "fontColor": "#16325c",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "innerMajorBorderColor": "#a8b7c7",
+                    "innerMinorBorderColor": "#e0e5ee",
+                    "interactions": [],
+                    "mode": "fittocontainer",
+                    "numberOfFrozenColumns": 2,
+                    "numberOfLines": 1,
+                    "pivoted": false,
+                    "showActionMenu": true,
+                    "showRowIndexColumn": false,
+                    "step": "QS_Tabular_Standard__1",
+                    "totals": true,
+                    "verticalPadding": 8,
+                    "evenRowColor": null,
+                    "oddRowColor": null
+                },
+                "type": "table"
+            },
+            "text_1": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "28px",
+                                    "bold": true,
+                                    "italic": true
+                                },
+                                "insert": "Quality Specification "
+                            },
+                            {
+                                "attributes": {
+                                    "align": "center"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "interactions": [],
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "filterpanel_3": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "QualitySpecification"
+                            },
+                            "field": "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_2": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "QualitySpecification"
+                            },
+                            "field": "Quality_Specification__c.Name"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "text_3": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "28px",
+                                    "bold": true,
+                                    "italic": true
+                                },
+                                "insert": "Quality Specification: Standard Units"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "center"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "interactions": [],
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "filterpanel_1": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "QualitySpecification"
+                            },
+                            "field": "Product__c.Name"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "link_1": {
+                "parameters": {
+                    "destinationLink": {
+                        "name": "Quality_Specification_Graphical"
+                    },
+                    "destinationType": "dashboard",
+                    "fontSize": 18,
+                    "includeState": false,
+                    "text": "Graphical Page",
+                    "textAlignment": "center",
+                    "textColor": "#670000"
+                },
+                "type": "link"
+            }
+        },
+        "parameters": []
+    },
+    "datasets": [
+        {
+            "id": "0Fb2w000000OWUqCAO",
+            "label": "QualitySpecification",
+            "name": "QualitySpecification",
+            "url": "/services/data/v59.0/wave/datasets/0Fb2w000000OWUqCAO"
+        }
+    ]
+}

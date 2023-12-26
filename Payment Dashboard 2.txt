@@ -1,0 +1,1392 @@
+{
+    "label": "Payment Dashboard - 2",
+    "mobileDisabled": false,
+    "state": {
+        "dataSourceLinksInfo": {
+            "enableAutomaticLinking": true,
+            "excludeRelationships": [],
+            "links": [
+                {
+                    "fields": [
+                        {
+                            "dataSourceName": "OPPNew",
+                            "dataSourceType": "dataset",
+                            "fieldName": "Account.Name"
+                        },
+                        {
+                            "dataSourceName": "SwastikDataset",
+                            "dataSourceType": "dataset",
+                            "fieldName": "Opportunity__c.AccountId.Name"
+                        }
+                    ],
+                    "label": "Account Name",
+                    "name": "Link_3100"
+                }
+            ]
+        },
+        "filters": [
+            {
+                "dataset": {
+                    "id": "0Fb2w000000k5CfCAI",
+                    "name": "SwastikDataset",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000k5CfCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product__c.Category__c"
+                ],
+                "label": "Category ",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000k5CfCAI",
+                    "name": "SwastikDataset",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000k5CfCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product__c.Cat_1__c"
+                ],
+                "label": "Cat -1",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000k5CfCAI",
+                    "name": "SwastikDataset",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000k5CfCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product__c.Cat_2__c"
+                ],
+                "label": "Cat-2 ",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000k5CfCAI",
+                    "name": "SwastikDataset",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000k5CfCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product__c.Brand__c"
+                ],
+                "label": "Brand",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000k5CfCAI",
+                    "name": "SwastikDataset",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000k5CfCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product__c.Groups__c"
+                ],
+                "label": "Groups",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000k5CfCAI",
+                    "name": "SwastikDataset",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000k5CfCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product__c.Sub_Group_1__c"
+                ],
+                "label": "Sub-Group 1",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000k5CfCAI",
+                    "name": "SwastikDataset",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000k5CfCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product__c.Sub_Group_2__c"
+                ],
+                "label": "Sub-Group 2",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000k5CfCAI",
+                    "name": "SwastikDataset",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000k5CfCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "Opportunity__c.Company__c"
+                ],
+                "label": "Company ",
+                "locked": false,
+                "operator": "in"
+            }
+        ],
+        "gridLayouts": [
+            {
+                "name": "Default",
+                "numColumns": 50,
+                "pages": [
+                    {
+                        "label": "Untitled",
+                        "name": "ab0a1cad-eeb0-476a-aacb-1af61e2d9c9a",
+                        "navigationHidden": false,
+                        "widgets": [
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "text_1",
+                                "row": 0,
+                                "rowspan": 1,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "text_3",
+                                "row": 9,
+                                "rowspan": 1,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "chart_1",
+                                "row": 12,
+                                "rowspan": 8,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "container_1",
+                                "row": 10,
+                                "rowspan": 2,
+                                "widgetStyle": {
+                                    "backgroundColor": "#E6ECF2",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 0,
+                                "name": "filterpanel_1",
+                                "row": 10,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 9,
+                                "name": "filterpanel_2",
+                                "row": 10,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 18,
+                                "name": "filterpanel_3",
+                                "row": 10,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 27,
+                                "name": "filterpanel_4",
+                                "row": 10,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 36,
+                                "name": "filterpanel_5",
+                                "row": 10,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 0,
+                                "name": "filterpanel_6",
+                                "row": 11,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 9,
+                                "name": "filterpanel_7",
+                                "row": 11,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 18,
+                                "name": "filterpanel_8",
+                                "row": 11,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "chart_4",
+                                "row": 1,
+                                "rowspan": 8,
+                                "widgetStyle": {}
+                            }
+                        ]
+                    }
+                ],
+                "rowHeight": "normal",
+                "selectors": [],
+                "style": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "backgroundColor": "#F2F6FA",
+                    "cellSpacingX": 8,
+                    "cellSpacingY": 8,
+                    "fit": "original",
+                    "gutterColor": "#C5D3E0"
+                },
+                "version": 1
+            }
+        ],
+        "layouts": [],
+        "steps": {
+            "Product_Wise_Details_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000k5CfCAI",
+                        "label": "SwastikDataset",
+                        "name": "SwastikDataset",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000k5CfCAI"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Product Wise Details ",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "A",
+                            "filters": [],
+                            "ascending": false
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "sum",
+                                        "Basic_Value_2__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product__c.Name"
+                            ],
+                            "joins": [],
+                            "name": "SwastikDataset"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "sum",
+                                        "Basic_Value_2__c"
+                                    ],
+                                    "name": "B"
+                                }
+                            ],
+                            "filters": [
+                                [
+                                    "Opportunity__c.Payment_Status__c",
+                                    [
+                                        "Pending"
+                                    ],
+                                    "in"
+                                ]
+                            ],
+                            "groups": [
+                                "Product__c.Name"
+                            ],
+                            "joins": [],
+                            "name": "SwastikDataset"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "sum",
+                                        "Basic_Value_2__c"
+                                    ],
+                                    "name": "C"
+                                }
+                            ],
+                            "filters": [
+                                [
+                                    "Opportunity__c.Payment_Status__c",
+                                    [
+                                        "Cleared"
+                                    ],
+                                    "in"
+                                ]
+                            ],
+                            "groups": [
+                                "Product__c.Name"
+                            ],
+                            "joins": [],
+                            "name": "SwastikDataset"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Payment_Days__c"
+                                    ],
+                                    "name": "D"
+                                }
+                            ],
+                            "filters": [
+                                [
+                                    "Opportunity__c.Payment_Status__c",
+                                    [
+                                        "Cleared"
+                                    ],
+                                    "in"
+                                ]
+                            ],
+                            "groups": [
+                                "Product__c.Name"
+                            ],
+                            "joins": [],
+                            "name": "SwastikDataset"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": false,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "fontSize": 14,
+                            "subtitleFontSize": 11,
+                            "label": "",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Product__c.Name"
+                            ],
+                            "plots": [
+                                "A",
+                                "B",
+                                "C",
+                                "D"
+                            ]
+                        },
+                        "showActionMenu": false,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "compactNumber",
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": 20,
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "lens_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000k5CfCAI",
+                        "label": "SwastikDataset",
+                        "name": "SwastikDataset",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000k5CfCAI"
+                    },
+                    {
+                        "id": "0Fb2w0000006eaRCAQ",
+                        "label": "AdvanceMade",
+                        "name": "AdvanceMade",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w0000006eaRCAQ"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Vendors Wise Details ",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "A",
+                            "filters": [],
+                            "ascending": false
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "cogroupType": "left",
+                            "columns": [
+                                {
+                                    "field": [
+                                        "sum",
+                                        "Basic_Value_2__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Opportunity__c.AccountId.Name"
+                            ],
+                            "joins": [],
+                            "name": "SwastikDataset"
+                        },
+                        {
+                            "cogroupType": "left",
+                            "columns": [
+                                {
+                                    "field": [
+                                        "sum",
+                                        "Basic_Value_2__c"
+                                    ],
+                                    "name": "B"
+                                }
+                            ],
+                            "filters": [
+                                [
+                                    "Opportunity__c.Payment_Status__c",
+                                    [
+                                        "Pending"
+                                    ],
+                                    "in"
+                                ]
+                            ],
+                            "groups": [
+                                "Opportunity__c.AccountId.Name"
+                            ],
+                            "joins": [],
+                            "name": "SwastikDataset"
+                        },
+                        {
+                            "cogroupType": "left",
+                            "columns": [
+                                {
+                                    "field": [
+                                        "sum",
+                                        "Basic_Value_2__c"
+                                    ],
+                                    "name": "C"
+                                }
+                            ],
+                            "filters": [
+                                [
+                                    "Opportunity__c.Payment_Status__c",
+                                    [
+                                        "Cleared"
+                                    ],
+                                    "in"
+                                ]
+                            ],
+                            "groups": [
+                                "Opportunity__c.AccountId.Name"
+                            ],
+                            "joins": [],
+                            "name": "SwastikDataset"
+                        },
+                        {
+                            "cogroupType": "left",
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Opportunity__c.AccountId.Avg_Payment_Days__c"
+                                    ],
+                                    "name": "G"
+                                }
+                            ],
+                            "filters": [
+                                [
+                                    "Opportunity__c.Payment_Status__c",
+                                    [
+                                        "Cleared"
+                                    ],
+                                    "in"
+                                ]
+                            ],
+                            "groups": [
+                                "Opportunity__c.AccountId.Name"
+                            ],
+                            "joins": [],
+                            "name": "SwastikDataset"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "sum",
+                                        "Payment_Amount__c"
+                                    ],
+                                    "name": "D"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Account.Name"
+                            ],
+                            "joins": [],
+                            "name": "AdvanceMade"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "sum",
+                                        "Payment_Amount__c"
+                                    ],
+                                    "name": "E"
+                                }
+                            ],
+                            "filters": [
+                                [
+                                    "Advance_Status__c",
+                                    [
+                                        "Adjusted"
+                                    ],
+                                    "in"
+                                ]
+                            ],
+                            "groups": [
+                                "Account.Name"
+                            ],
+                            "joins": [],
+                            "name": "AdvanceMade"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "sum",
+                                        "Payment_Amount__c"
+                                    ],
+                                    "name": "F"
+                                }
+                            ],
+                            "filters": [
+                                [
+                                    "Advance_Status__c",
+                                    [
+                                        "Not Adjusted"
+                                    ],
+                                    "in"
+                                ]
+                            ],
+                            "groups": [
+                                "Account.Name"
+                            ],
+                            "joins": [],
+                            "name": "AdvanceMade"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": false,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "fontSize": 14,
+                            "subtitleFontSize": 11,
+                            "label": "",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Opportunity__c.AccountId.Name"
+                            ],
+                            "plots": [
+                                "A",
+                                "B",
+                                "C",
+                                "D",
+                                "E",
+                                "F",
+                                "G"
+                            ]
+                        },
+                        "showActionMenu": false,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "compactNumber",
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": 20,
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            }
+        },
+        "widgetStyle": {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#E6ECF2",
+            "borderEdges": [],
+            "borderRadius": 0,
+            "borderWidth": 1
+        },
+        "widgets": {
+            "text_1": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "color": "#0d33b6",
+                                    "size": "28px",
+                                    "bold": true
+                                },
+                                "insert": "Vendor Billing and Advance Report"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "center"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "interactions": [],
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "filterpanel_2": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "SwastikDataset"
+                            },
+                            "field": "Product__c.Cat_1__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_1": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "SwastikDataset"
+                            },
+                            "field": "Product__c.Category__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_8": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "SwastikDataset"
+                            },
+                            "field": "Product__c.Sub_Group_2__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "container_1": {
+                "parameters": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original",
+                    "interactions": []
+                },
+                "type": "container"
+            },
+            "filterpanel_7": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "SwastikDataset"
+                            },
+                            "field": "Product__c.Sub_Group_1__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_6": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "SwastikDataset"
+                            },
+                            "field": "Product__c.Groups__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_5": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "SwastikDataset"
+                            },
+                            "field": "Opportunity__c.Company__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_4": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "SwastikDataset"
+                            },
+                            "field": "Product__c.Brand__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_3": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "SwastikDataset"
+                            },
+                            "field": "Product__c.Cat_2__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "text_3": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "28px",
+                                    "bold": true,
+                                    "italic": true
+                                },
+                                "insert": "Product Wise Details "
+                            },
+                            {
+                                "attributes": {
+                                    "align": "center"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "interactions": [],
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "chart_1": {
+                "parameters": {
+                    "autoFitMode": "keepLabels",
+                    "bins": {
+                        "breakpoints": {
+                            "high": 100,
+                            "low": 0
+                        },
+                        "bands": {
+                            "high": {
+                                "color": "#008000",
+                                "label": ""
+                            },
+                            "low": {
+                                "color": "#B22222",
+                                "label": ""
+                            },
+                            "medium": {
+                                "color": "#ffa500",
+                                "label": ""
+                            }
+                        }
+                    },
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": false,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "multi",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "hbar",
+                    "exploreLink": true,
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "binValues": false,
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "columnMap": {
+                        "trellis": [],
+                        "dimensionAxis": [
+                            "Product__c.Name"
+                        ],
+                        "plots": [
+                            "A",
+                            "B",
+                            "C",
+                            "D"
+                        ]
+                    },
+                    "showActionMenu": false,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "valueType": "compactNumber",
+                    "measureAxis1": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "theme": "wave",
+                    "step": "Product_Wise_Details_1",
+                    "compactDecimalDigits": -1,
+                    "dimensionAxis": {
+                        "showTitle": true,
+                        "customSize": 20,
+                        "showAxis": true,
+                        "title": "",
+                        "icons": {
+                            "useIcons": false,
+                            "iconProps": {
+                                "fit": "cover",
+                                "column": "",
+                                "type": "round"
+                            }
+                        }
+                    },
+                    "applyConditionalFormatting": true
+                },
+                "type": "chart"
+            },
+            "chart_4": {
+                "parameters": {
+                    "autoFitMode": "keepLabels",
+                    "bins": {
+                        "breakpoints": {
+                            "high": 100,
+                            "low": 0
+                        },
+                        "bands": {
+                            "high": {
+                                "color": "#008000",
+                                "label": ""
+                            },
+                            "low": {
+                                "color": "#B22222",
+                                "label": ""
+                            },
+                            "medium": {
+                                "color": "#ffa500",
+                                "label": ""
+                            }
+                        }
+                    },
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": false,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "multi",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "hbar",
+                    "exploreLink": true,
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "binValues": false,
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "columnMap": {
+                        "trellis": [],
+                        "dimensionAxis": [
+                            "Opportunity__c.AccountId.Name"
+                        ],
+                        "plots": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E",
+                            "F",
+                            "G"
+                        ]
+                    },
+                    "showActionMenu": false,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "valueType": "compactNumber",
+                    "measureAxis1": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "theme": "wave",
+                    "step": "lens_1",
+                    "compactDecimalDigits": -1,
+                    "dimensionAxis": {
+                        "showTitle": true,
+                        "customSize": 20,
+                        "showAxis": true,
+                        "title": "",
+                        "icons": {
+                            "useIcons": false,
+                            "iconProps": {
+                                "fit": "cover",
+                                "column": "",
+                                "type": "round"
+                            }
+                        }
+                    },
+                    "applyConditionalFormatting": true
+                },
+                "type": "chart"
+            }
+        },
+        "parameters": []
+    },
+    "datasets": [
+        {
+            "id": "0Fb2w0000006eaRCAQ",
+            "label": "AdvanceMade",
+            "name": "AdvanceMade",
+            "url": "/services/data/v59.0/wave/datasets/0Fb2w0000006eaRCAQ"
+        },
+        {
+            "id": "0Fb2w000000k5CfCAI",
+            "label": "SwastikDataset",
+            "name": "SwastikDataset",
+            "url": "/services/data/v59.0/wave/datasets/0Fb2w000000k5CfCAI"
+        }
+    ]
+}

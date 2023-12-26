@@ -1,0 +1,2401 @@
+{
+    "label": "Market Trend Analysis",
+    "mobileDisabled": false,
+    "state": {
+        "dataSourceLinksInfo": {
+            "enableAutomaticLinking": true,
+            "excludeRelationships": [],
+            "links": []
+        },
+        "filters": [
+            {
+                "dataset": {
+                    "id": "0Fb2w000000sl30CAA",
+                    "name": "Line_Item",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product2.Brand__c"
+                ],
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000sl30CAA",
+                    "name": "Line_Item",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product2.Cat_2__c"
+                ],
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000sl30CAA",
+                    "name": "Line_Item",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product2.Cat_1__c"
+                ],
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000sl30CAA",
+                    "name": "Line_Item",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product2.Category__c"
+                ],
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000sl30CAA",
+                    "name": "Line_Item",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product2.Groups__c"
+                ],
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000sl30CAA",
+                    "name": "Line_Item",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product2.Sub_Group_1__c"
+                ],
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000sl30CAA",
+                    "name": "Line_Item",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product2.Sub_Group_2__c"
+                ],
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000sl30CAA",
+                    "name": "Line_Item",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                },
+                "dependent": true,
+                "fields": [
+                    "Account__c"
+                ],
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000sl30CAA",
+                    "name": "Line_Item",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                },
+                "dependent": true,
+                "fields": [
+                    "Account_Name__c"
+                ],
+                "label": "Vendor Name",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000sl30CAA",
+                    "name": "Line_Item",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                },
+                "dependent": true,
+                "fields": [
+                    "RR_Date__c"
+                ],
+                "locked": false,
+                "operator": ">=<="
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000sl30CAA",
+                    "name": "Line_Item",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product2.Name"
+                ],
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w000000sl31CAA",
+                    "name": "Enquiry",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl31CAA"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product_Name__c"
+                ],
+                "locked": false,
+                "operator": "in"
+            }
+        ],
+        "gridLayouts": [
+            {
+                "name": "Default",
+                "numColumns": 10,
+                "pages": [
+                    {
+                        "label": "Untitled",
+                        "name": "a1931e45-0b21-4c8f-82c2-3665044b17b3",
+                        "navigationHidden": false,
+                        "widgets": [
+                            {
+                                "colspan": 2,
+                                "column": 0,
+                                "name": "filterpanel_5",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#747474",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 2,
+                                "column": 4,
+                                "name": "filterpanel_2",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#747474",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 2,
+                                "column": 6,
+                                "name": "filterpanel_9",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#747474",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 2,
+                                "column": 8,
+                                "name": "filterpanel_8",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#747474",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 2,
+                                "column": 0,
+                                "name": "filterpanel_6",
+                                "row": 2,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#747474",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 2,
+                                "column": 2,
+                                "name": "filterpanel_10",
+                                "row": 2,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#747474",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 2,
+                                "column": 4,
+                                "name": "filterpanel_11",
+                                "row": 2,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#747474",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 2,
+                                "column": 6,
+                                "name": "filterpanel_12",
+                                "row": 2,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#747474",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 2,
+                                "column": 8,
+                                "name": "filterpanel_4",
+                                "row": 2,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#747474",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 10,
+                                "column": 0,
+                                "name": "container_1",
+                                "row": 3,
+                                "rowspan": 16,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 10,
+                                "column": 0,
+                                "name": "chart_2",
+                                "row": 3,
+                                "rowspan": 12,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 10,
+                                "column": 0,
+                                "name": "container_2",
+                                "row": 19,
+                                "rowspan": 12,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 10,
+                                "column": 0,
+                                "name": "chart_1",
+                                "row": 19,
+                                "rowspan": 12,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 10,
+                                "column": 0,
+                                "name": "container_3",
+                                "row": 31,
+                                "rowspan": 11,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 10,
+                                "column": 0,
+                                "name": "chart_3",
+                                "row": 31,
+                                "rowspan": 11,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 10,
+                                "column": 0,
+                                "name": "text_1",
+                                "row": 42,
+                                "rowspan": 1,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 10,
+                                "column": 0,
+                                "name": "table_1",
+                                "row": 43,
+                                "rowspan": 10,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 10,
+                                "column": 0,
+                                "name": "text_2",
+                                "row": 53,
+                                "rowspan": 1,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 10,
+                                "column": 0,
+                                "name": "text_3",
+                                "row": 0,
+                                "rowspan": 1,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 2,
+                                "column": 2,
+                                "name": "filterpanel_1",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#747474",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 10,
+                                "column": 0,
+                                "name": "table_3",
+                                "row": 54,
+                                "rowspan": 17,
+                                "widgetStyle": {}
+                            }
+                        ]
+                    }
+                ],
+                "rowHeight": "normal",
+                "selectors": [],
+                "style": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "backgroundColor": "#F2F6FA",
+                    "cellSpacingX": 8,
+                    "cellSpacingY": 8,
+                    "fit": "original",
+                    "gutterColor": "#C5D3E0"
+                },
+                "version": 1
+            }
+        ],
+        "layouts": [],
+        "steps": {
+            "Clone_of_Market_Rate_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000sl30CAA",
+                        "label": "Line_Item",
+                        "name": "Line_Item",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                    },
+                    {
+                        "id": "0Fb2w000000sl31CAA",
+                        "label": "Enquiry",
+                        "name": "Enquiry",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl31CAA"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Market Trend",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Product2.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "RR_Date__c_Year",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "RR_Date__c_Month",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "cogroupType": "inner",
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Rate_without_GST__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product2.Name",
+                                "RR_Date__c_Year",
+                                "RR_Date__c_Month"
+                            ],
+                            "joins": [],
+                            "name": "Line_Item"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Market_Rate__c"
+                                    ],
+                                    "name": "B"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product_Name__c",
+                                "Enquiry_Date__c_Year",
+                                "Enquiry_Date__c_Month"
+                            ],
+                            "joins": [],
+                            "name": "Enquiry"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "showPoints": true,
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "sync",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "line",
+                        "dashLine": {
+                            "measures": "",
+                            "showDashLine": false
+                        },
+                        "title": {
+                            "fontSize": 14,
+                            "subtitleFontSize": 11,
+                            "label": "Market Trend Analysis",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "fillArea": false,
+                        "columnMap": {
+                            "split": [],
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Product2.Name",
+                                "RR_Date__c_Year",
+                                "RR_Date__c_Month"
+                            ],
+                            "plots": [
+                                "B",
+                                "A"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "showZero": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "none",
+                        "measureAxis1": {
+                            "sqrtScale": true,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "Avg of Market Rate Trend",
+                            "customDomain": {
+                                "high": 1000,
+                                "low": -2,
+                                "showDomain": true
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "Product",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true,
+                        "drawArea": {
+                            "measure": "",
+                            "showDrawArea": false,
+                            "bounding1": "",
+                            "bounding2": ""
+                        }
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "Clone_of_Market_Tren_1": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "Market Trend Table with all data",
+                "numbers": [],
+                "query": "q1 = load \"Enquiry\";\nq2 = load \"Line_Item\";\nq = cogroup q1 by ('Product_Name__c', 'Account_Name__c', 'Enquiry_Date__c_Year', 'Enquiry_Date__c_Month', 'Enquiry_Date__c_Day') full, q2 by ('Product2.Name', 'Account_Name__c', 'Purchase_Date__c_Year', 'Purchase_Date__c_Month', 'Purchase_Date__c_Day');\nq = foreach q generate coalesce(q1.'Product_Name__c', q2.'Product2.Name') as 'Product_Name__c', coalesce(q1.'Account_Name__c', q2.'Account_Name__c') as 'Vendor Name', coalesce(q1.'Enquiry_Date__c_Year', q2.'Purchase_Date__c_Year') as 'Year', coalesce(q1.'Enquiry_Date__c_Month', q2.'Purchase_Date__c_Month') as 'Month', coalesce(q1.'Enquiry_Date__c_Day', q2.'Purchase_Date__c_Day') as 'Day', avg(q1.'Market_Rate__c') as 'Avg of Market Rate', max(q1.'Market_Rate__c') as 'Max of Market Rate', min(q1.'Market_Rate__c') as 'Min of Market Rate', avg(q2.'Rate_without_GST__c') as 'Avg of Purchase Rate', max(q2.'Rate_without_GST__c') as 'Max of Purchase Rate', min(q2.'Rate_without_GST__c') as 'Min of Purchase Rate';\nq = limit q 2000;",
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "strings": [],
+                "type": "saql",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "borderColor": "#54698d",
+                        "borderWidth": 1,
+                        "cell": {
+                            "backgroundColor": "#16325c",
+                            "fontColor": "#ffffff",
+                            "fontSize": 12,
+                            "textWrap": true
+                        },
+                        "columnProperties": {},
+                        "columns": [
+                            "Avg of Market Rate",
+                            "Avg of Purchase Rate",
+                            "Max of Market Rate",
+                            "Max of Purchase Rate",
+                            "Min of Market Rate",
+                            "Min of Purchase Rate",
+                            "Product_Name__c",
+                            "Vendor Name",
+                            "Year",
+                            "Month",
+                            "Day"
+                        ],
+                        "customBulkActions": [],
+                        "header": {
+                            "backgroundColor": "#000000",
+                            "fontColor": "#ffffff",
+                            "fontSize": 12,
+                            "textWrap": true
+                        },
+                        "innerMajorBorderColor": "#54698d",
+                        "innerMinorBorderColor": "#54698d",
+                        "interactions": [],
+                        "maxColumnWidth": 300,
+                        "minColumnWidth": 40,
+                        "mode": "variable",
+                        "numberOfLines": 1,
+                        "pivoted": false,
+                        "showActionMenu": true,
+                        "totals": true,
+                        "verticalPadding": 8
+                    },
+                    "type": "table"
+                }
+            },
+            "Market_Trend_Table__1": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "Market Trend Table ",
+                "numbers": [],
+                "query": "q1 = load \"Enquiry\";\nq2 = load \"Line_Item\";\nq = cogroup q1 by ('Product_Name__c', 'Enquiry_Date__c_Year', 'Enquiry_Date__c_Month', 'Enquiry_Date__c_Day') inner, q2 by ('Product2.Name', 'RR_Date__c_Year', 'RR_Date__c_Month', 'RR_Date__c_Day');\nq = foreach q generate coalesce(q1.'Product_Name__c', q2.'Product2.Name') as 'Product_Name__c', coalesce(q1.'Enquiry_Date__c_Year', q2.'RR_Date__c_Year') as 'Year', coalesce(q1.'Enquiry_Date__c_Month', q2.'RR_Date__c_Month') as 'Month', coalesce(q1.'Enquiry_Date__c_Day', q2.'RR_Date__c_Day') as 'Day', avg(q1.'Market_Rate__c') as 'Avg of Market Rate', max(q1.'Market_Rate__c') as 'Max of Market Rate', min(q1.'Market_Rate__c') as 'Min of Market Rate', avg(q2.'Rate_without_GST__c') as 'Avg of Purchasse Rate', max(q2.'Rate_without_GST__c') as 'Max of Purchasse Rate', min(q2.'Rate_without_GST__c') as 'Min of Purchasse Rate';\nq = limit q 2000;",
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "strings": [],
+                "type": "saql",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "borderColor": "#54698d",
+                        "borderWidth": 1,
+                        "cell": {
+                            "backgroundColor": "#16325c",
+                            "fontColor": "#ffffff",
+                            "fontSize": 12,
+                            "textWrap": true
+                        },
+                        "columnProperties": {},
+                        "columns": [
+                            "Avg of Market Rate",
+                            "Avg of Purchasse Rate",
+                            "Max of Market Rate",
+                            "Max of Purchasse Rate",
+                            "Min of Market Rate",
+                            "Min of Purchasse Rate",
+                            "Product_Name__c",
+                            "Year",
+                            "Month",
+                            "Day"
+                        ],
+                        "customBulkActions": [],
+                        "header": {
+                            "backgroundColor": "#000000",
+                            "fontColor": "#ffffff",
+                            "fontSize": 12,
+                            "textWrap": true
+                        },
+                        "innerMajorBorderColor": "#54698d",
+                        "innerMinorBorderColor": "#54698d",
+                        "interactions": [],
+                        "maxColumnWidth": 300,
+                        "minColumnWidth": 40,
+                        "mode": "variable",
+                        "numberOfLines": 1,
+                        "pivoted": false,
+                        "showActionMenu": true,
+                        "totals": true,
+                        "verticalPadding": 8
+                    },
+                    "type": "table"
+                }
+            },
+            "lens_3": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "Overall_Market_Rate_Analysis ",
+                "numbers": [],
+                "query": "q1 = load \"Enquiry\";\nq2 = load \"Line_Item\";\nq = cogroup q1 by ('Product_Name__c', 'Account_Name__c', 'Enquiry_Date__c_Year', 'Enquiry_Date__c_Month', 'Enquiry_Date__c_Day') full, q2 by ('Product2.Name', 'Account_Name__c', 'RR_Date__c_Year', 'RR_Date__c_Month', 'RR_Date__c_Day');\nq = foreach q generate coalesce(q1.'Product_Name__c', q2.'Product2.Name') as 'Product_Name__c', coalesce(q1.'Account_Name__c', q2.'Account_Name__c') as 'Vendor Name', coalesce(q1.'Enquiry_Date__c_Year', q2.'RR_Date__c_Year') as 'Year', coalesce(q1.'Enquiry_Date__c_Month', q2.'RR_Date__c_Month') as 'Month', coalesce(q1.'Enquiry_Date__c_Day', q2.'RR_Date__c_Day') as 'Day', avg(q1.'Market_Rate__c') as 'Avg of Market Rate', max(q1.'Market_Rate__c') as 'Max of Market Rate', min(q1.'Market_Rate__c') as 'Min of Market Rate', avg(q2.'Rate_without_GST__c') as 'Avg of Purchase Rate', max(q2.'Rate_without_GST__c') as 'Max of Purchase Rate', min(q2.'Rate_without_GST__c') as 'Min of Purchase Rate';\nq = limit q 2000;",
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "strings": [],
+                "type": "saql",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "borderColor": "#54698d",
+                        "borderWidth": 1,
+                        "cell": {
+                            "backgroundColor": "#16325c",
+                            "fontColor": "#ffffff",
+                            "fontSize": 12,
+                            "textWrap": true
+                        },
+                        "columnProperties": {},
+                        "columns": [
+                            "Avg of Market Rate",
+                            "Avg of Purchase Rate",
+                            "Max of Market Rate",
+                            "Max of Purchase Rate",
+                            "Min of Market Rate",
+                            "Min of Purchase Rate",
+                            "Product_Name__c",
+                            "Vendor Name",
+                            "Year",
+                            "Month",
+                            "Day"
+                        ],
+                        "customBulkActions": [],
+                        "header": {
+                            "backgroundColor": "#000000",
+                            "fontColor": "#ffffff",
+                            "fontSize": 12,
+                            "textWrap": true
+                        },
+                        "innerMajorBorderColor": "#54698d",
+                        "innerMinorBorderColor": "#54698d",
+                        "interactions": [],
+                        "maxColumnWidth": 300,
+                        "minColumnWidth": 40,
+                        "mode": "variable",
+                        "numberOfLines": 1,
+                        "pivoted": false,
+                        "showActionMenu": true,
+                        "showRowIndexColumn": false,
+                        "totals": true,
+                        "verticalPadding": 8
+                    },
+                    "type": "table"
+                }
+            },
+            "lens_4": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000sl31CAA",
+                        "label": "Enquiry",
+                        "name": "Enquiry",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl31CAA"
+                    },
+                    {
+                        "id": "0Fb2w000000sl30CAA",
+                        "label": "Line_Item",
+                        "name": "Line_Item",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                    }
+                ],
+                "isGlobal": false,
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Product_Name__c",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Enquiry_Date__c_Year",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Enquiry_Date__c_Month",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Enquiry_Date__c_Day",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "cogroupType": "full",
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Market_Rate__c"
+                                    ],
+                                    "name": "A"
+                                },
+                                {
+                                    "field": [
+                                        "max",
+                                        "Market_Rate__c"
+                                    ],
+                                    "name": "C"
+                                },
+                                {
+                                    "field": [
+                                        "min",
+                                        "Market_Rate__c"
+                                    ],
+                                    "name": "E"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product_Name__c",
+                                "Enquiry_Date__c_Year",
+                                "Enquiry_Date__c_Month",
+                                "Enquiry_Date__c_Day"
+                            ],
+                            "joins": [],
+                            "name": "Enquiry"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Rate_without_GST__c"
+                                    ],
+                                    "name": "B"
+                                },
+                                {
+                                    "field": [
+                                        "max",
+                                        "Rate_without_GST__c"
+                                    ],
+                                    "name": "D"
+                                },
+                                {
+                                    "field": [
+                                        "min",
+                                        "Rate_without_GST__c"
+                                    ],
+                                    "name": "F"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product2.Name",
+                                "RR_Date__c_Year",
+                                "RR_Date__c_Month",
+                                "RR_Date__c_Day"
+                            ],
+                            "joins": [],
+                            "name": "Line_Item"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {},
+                    "parameters": {
+                        "borderColor": "#e0e5ee",
+                        "borderWidth": 1,
+                        "cell": {
+                            "backgroundColor": "#ffffff",
+                            "fontColor": "#16325c",
+                            "fontSize": 12,
+                            "textWrap": true
+                        },
+                        "columnProperties": {},
+                        "columns": [
+                            "A",
+                            "B",
+                            "C",
+                            "D",
+                            "E",
+                            "F",
+                            "Product_Name__c",
+                            "Enquiry_Date__c_Year",
+                            "Enquiry_Date__c_Month",
+                            "Enquiry_Date__c_Day"
+                        ],
+                        "customBulkActions": [],
+                        "header": {
+                            "backgroundColor": "#f4f6f9",
+                            "fontColor": "#16325c",
+                            "fontSize": 12,
+                            "textWrap": true
+                        },
+                        "innerMajorBorderColor": "#a8b7c7",
+                        "innerMinorBorderColor": "#e0e5ee",
+                        "interactions": [],
+                        "maxColumnWidth": 300,
+                        "minColumnWidth": 40,
+                        "mode": "variable",
+                        "numberOfLines": 1,
+                        "showActionMenu": true,
+                        "showRowIndexColumn": false,
+                        "totals": true,
+                        "verticalPadding": 8
+                    },
+                    "type": "table"
+                }
+            },
+            "lens_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000sl30CAA",
+                        "label": "Line_Item",
+                        "name": "Line_Item",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                    },
+                    {
+                        "id": "0Fb2w000000sl31CAA",
+                        "label": "Enquiry",
+                        "name": "Enquiry",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl31CAA"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Market Rate",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Product2.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "RR_Date__c_Year",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "RR_Date__c_Month",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "cogroupType": "inner",
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Rate_without_GST__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product2.Name",
+                                "RR_Date__c_Year",
+                                "RR_Date__c_Month"
+                            ],
+                            "joins": [],
+                            "name": "Line_Item"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Market_Rate__c"
+                                    ],
+                                    "name": "B"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product_Name__c",
+                                "Enquiry_Date__c_Year",
+                                "Enquiry_Date__c_Month"
+                            ],
+                            "joins": [],
+                            "name": "Enquiry"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "showPoints": true,
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "sync",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "line",
+                        "dashLine": {
+                            "measures": "",
+                            "showDashLine": false
+                        },
+                        "title": {
+                            "fontSize": 14,
+                            "subtitleFontSize": 11,
+                            "label": "Market Rate Trend",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "fillArea": false,
+                        "columnMap": {
+                            "split": [],
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Product2.Name",
+                                "RR_Date__c_Year",
+                                "RR_Date__c_Month"
+                            ],
+                            "plots": [
+                                "B"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "showZero": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "none",
+                        "measureAxis1": {
+                            "sqrtScale": true,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "Avg of Market Rate",
+                            "customDomain": {
+                                "high": 100,
+                                "low": -2,
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "Product ",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true,
+                        "drawArea": {
+                            "measure": "",
+                            "showDrawArea": false,
+                            "bounding1": "",
+                            "bounding2": ""
+                        }
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
+            "lens_2": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000sl30CAA",
+                        "label": "Line_Item",
+                        "name": "Line_Item",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                    },
+                    {
+                        "id": "0Fb2w000000sl31CAA",
+                        "label": "Enquiry",
+                        "name": "Enquiry",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl31CAA"
+                    }
+                ],
+                "isGlobal": false,
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Product2.Name",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "cogroupType": "full",
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Rate_without_GST__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product2.Name"
+                            ],
+                            "joins": [],
+                            "name": "Line_Item"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Market_Rate__c"
+                                    ],
+                                    "name": "B"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product_Name__c"
+                            ],
+                            "joins": [],
+                            "name": "Enquiry"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {},
+                    "parameters": {
+                        "borderColor": "#e0e5ee",
+                        "borderWidth": 1,
+                        "cell": {
+                            "backgroundColor": "#ffffff",
+                            "fontColor": "#16325c",
+                            "fontSize": 12,
+                            "textWrap": true
+                        },
+                        "columnProperties": {},
+                        "columns": [
+                            "A",
+                            "Product2.Name",
+                            "B"
+                        ],
+                        "customBulkActions": [],
+                        "header": {
+                            "backgroundColor": "#f4f6f9",
+                            "fontColor": "#16325c",
+                            "fontSize": 12,
+                            "textWrap": true
+                        },
+                        "innerMajorBorderColor": "#a8b7c7",
+                        "innerMinorBorderColor": "#e0e5ee",
+                        "interactions": [],
+                        "maxColumnWidth": 300,
+                        "minColumnWidth": 40,
+                        "mode": "variable",
+                        "numberOfLines": 1,
+                        "showActionMenu": true,
+                        "showRowIndexColumn": false,
+                        "totals": true,
+                        "verticalPadding": 8
+                    },
+                    "type": "table"
+                }
+            },
+            "Purchase_Rate_Trend_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w000000sl30CAA",
+                        "label": "Line_Item",
+                        "name": "Line_Item",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+                    },
+                    {
+                        "id": "0Fb2w000000sl31CAA",
+                        "label": "Enquiry",
+                        "name": "Enquiry",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl31CAA"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Purchase Rate Trend",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Product2.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "RR_Date__c_Year",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "RR_Date__c_Month",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "cogroupType": "inner",
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Rate_without_GST__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product2.Name",
+                                "RR_Date__c_Year",
+                                "RR_Date__c_Month"
+                            ],
+                            "joins": [],
+                            "name": "Line_Item"
+                        },
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Market_Rate__c"
+                                    ],
+                                    "name": "B"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product_Name__c",
+                                "Enquiry_Date__c_Year",
+                                "Enquiry_Date__c_Month"
+                            ],
+                            "joins": [],
+                            "name": "Enquiry"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "showPoints": true,
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "sync",
+                        "tooltip": {
+                            "content": {
+                                "legend": {
+                                    "showBinLabel": true,
+                                    "measures": [],
+                                    "showNullValues": true,
+                                    "customizeLegend": false,
+                                    "showPercentage": true,
+                                    "showDimensions": true,
+                                    "showMeasures": true,
+                                    "dimensions": []
+                                }
+                            }
+                        },
+                        "visualizationType": "line",
+                        "dashLine": {
+                            "measures": "",
+                            "showDashLine": false
+                        },
+                        "title": {
+                            "fontSize": 14,
+                            "subtitleFontSize": 11,
+                            "label": "Purchase Rate Trend",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "fillArea": false,
+                        "columnMap": {
+                            "split": [],
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "Product2.Name",
+                                "RR_Date__c_Year",
+                                "RR_Date__c_Month"
+                            ],
+                            "plots": [
+                                "A"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "showZero": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "valueType": "none",
+                        "measureAxis1": {
+                            "sqrtScale": true,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "Avg of Purchase Rate",
+                            "customDomain": {
+                                "high": 1000,
+                                "low": 0,
+                                "showDomain": true
+                            }
+                        },
+                        "theme": "wave",
+                        "compactDecimalDigits": -1,
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "Product",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true,
+                        "drawArea": {
+                            "measure": "",
+                            "showDrawArea": false,
+                            "bounding1": "",
+                            "bounding2": ""
+                        }
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            }
+        },
+        "widgetStyle": {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#747474",
+            "borderEdges": [],
+            "borderRadius": 0,
+            "borderWidth": 1
+        },
+        "widgets": {
+            "text_1": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "color": "#4269e8",
+                                    "size": "18px"
+                                },
+                                "insert": "Market  Trend Analysis Table"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "center"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "interactions": [],
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "filterpanel_2": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "Line_Item"
+                            },
+                            "field": "RR_Date__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_1": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "Enquiry"
+                            },
+                            "field": "Product_Name__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_10": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "Line_Item"
+                            },
+                            "field": "Product2.Groups__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_11": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "Line_Item"
+                            },
+                            "field": "Product2.Sub_Group_1__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_12": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "Line_Item"
+                            },
+                            "field": "Product2.Sub_Group_2__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "table_1": {
+                "parameters": {
+                    "borderColor": "#54698d",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "#16325c",
+                        "fontColor": "#ffffff",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "columnProperties": {},
+                    "columns": [
+                        "Avg of Market Rate",
+                        "Avg of Purchasse Rate",
+                        "Max of Market Rate",
+                        "Max of Purchasse Rate",
+                        "Min of Market Rate",
+                        "Min of Purchasse Rate",
+                        "Product_Name__c",
+                        "Year",
+                        "Month",
+                        "Day"
+                    ],
+                    "customBulkActions": [],
+                    "exploreLink": true,
+                    "header": {
+                        "backgroundColor": "#000000",
+                        "fontColor": "#ffffff",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "innerMajorBorderColor": "#54698d",
+                    "innerMinorBorderColor": "#54698d",
+                    "interactions": [],
+                    "maxColumnWidth": 300,
+                    "minColumnWidth": 40,
+                    "mode": "variable",
+                    "numberOfLines": 1,
+                    "pivoted": false,
+                    "showActionMenu": true,
+                    "step": "Market_Trend_Table__1",
+                    "totals": true,
+                    "verticalPadding": 8,
+                    "evenRowColor": null,
+                    "oddRowColor": null
+                },
+                "type": "table"
+            },
+            "filterpanel_9": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "Line_Item"
+                            },
+                            "field": "Product2.Category__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_8": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "Line_Item"
+                            },
+                            "field": "Product2.Cat_1__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "table_3": {
+                "parameters": {
+                    "borderColor": "#54698d",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "#16325c",
+                        "fontColor": "#ffffff",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "columnProperties": {},
+                    "columns": [
+                        "Avg of Market Rate",
+                        "Avg of Purchase Rate",
+                        "Max of Market Rate",
+                        "Max of Purchase Rate",
+                        "Min of Market Rate",
+                        "Min of Purchase Rate",
+                        "Product_Name__c",
+                        "Vendor Name",
+                        "Year",
+                        "Month",
+                        "Day"
+                    ],
+                    "customBulkActions": [],
+                    "exploreLink": true,
+                    "header": {
+                        "backgroundColor": "#000000",
+                        "fontColor": "#ffffff",
+                        "fontSize": 12,
+                        "textWrap": true
+                    },
+                    "innerMajorBorderColor": "#54698d",
+                    "innerMinorBorderColor": "#54698d",
+                    "interactions": [],
+                    "maxColumnWidth": 300,
+                    "minColumnWidth": 40,
+                    "mode": "variable",
+                    "numberOfLines": 1,
+                    "pivoted": false,
+                    "showActionMenu": true,
+                    "showRowIndexColumn": false,
+                    "step": "lens_3",
+                    "totals": true,
+                    "verticalPadding": 8,
+                    "evenRowColor": null,
+                    "oddRowColor": null
+                },
+                "type": "table"
+            },
+            "container_1": {
+                "parameters": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original",
+                    "interactions": []
+                },
+                "type": "container"
+            },
+            "filterpanel_6": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "Line_Item"
+                            },
+                            "field": "Product2.Cat_2__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "container_2": {
+                "parameters": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original",
+                    "interactions": []
+                },
+                "type": "container"
+            },
+            "filterpanel_5": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "Line_Item"
+                            },
+                            "field": "Account_Name__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "container_3": {
+                "parameters": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original",
+                    "interactions": []
+                },
+                "type": "container"
+            },
+            "filterpanel_4": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "Line_Item"
+                            },
+                            "field": "Product2.Brand__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "text_3": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "color": "#4269e8",
+                                    "size": "24px",
+                                    "bold": true
+                                },
+                                "insert": "Market Trend Analysis"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "center"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "interactions": [],
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "text_2": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "18px",
+                                    "color": "#4269e8"
+                                },
+                                "insert": "Overall Market Trend Analysis Table"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "center"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "interactions": [],
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "chart_2": {
+                "parameters": {
+                    "showPoints": true,
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": true,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "sync",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "line",
+                    "exploreLink": true,
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "Market Rate Trend",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "binValues": false,
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "showZero": true,
+                    "valueType": "none",
+                    "theme": "wave",
+                    "dimensionAxis": {
+                        "showTitle": true,
+                        "customSize": "auto",
+                        "showAxis": true,
+                        "title": "Product ",
+                        "icons": {
+                            "useIcons": false,
+                            "iconProps": {
+                                "fit": "cover",
+                                "column": "",
+                                "type": "round"
+                            }
+                        }
+                    },
+                    "applyConditionalFormatting": true,
+                    "drawArea": {
+                        "measure": "",
+                        "showDrawArea": false,
+                        "bounding1": "",
+                        "bounding2": ""
+                    },
+                    "autoFitMode": "keepLabels",
+                    "bins": {
+                        "breakpoints": {
+                            "high": 100,
+                            "low": 0
+                        },
+                        "bands": {
+                            "high": {
+                                "color": "#008000",
+                                "label": ""
+                            },
+                            "low": {
+                                "color": "#B22222",
+                                "label": ""
+                            },
+                            "medium": {
+                                "color": "#ffa500",
+                                "label": ""
+                            }
+                        }
+                    },
+                    "dashLine": {
+                        "measures": "",
+                        "showDashLine": false
+                    },
+                    "fillArea": false,
+                    "columnMap": {
+                        "split": [],
+                        "trellis": [],
+                        "dimensionAxis": [
+                            "Product2.Name",
+                            "RR_Date__c_Year",
+                            "RR_Date__c_Month"
+                        ],
+                        "plots": [
+                            "B"
+                        ]
+                    },
+                    "showActionMenu": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "measureAxis1": {
+                        "sqrtScale": true,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "Avg of Market Rate",
+                        "customDomain": {
+                            "high": 100,
+                            "low": -2,
+                            "showDomain": false
+                        }
+                    },
+                    "step": "lens_1",
+                    "compactDecimalDigits": -1
+                },
+                "type": "chart"
+            },
+            "chart_1": {
+                "parameters": {
+                    "showPoints": true,
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": true,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "sync",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "line",
+                    "exploreLink": true,
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "Purchase Rate Trend",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "binValues": false,
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "showZero": true,
+                    "valueType": "none",
+                    "theme": "wave",
+                    "dimensionAxis": {
+                        "showTitle": true,
+                        "customSize": "auto",
+                        "showAxis": true,
+                        "title": "Product",
+                        "icons": {
+                            "useIcons": false,
+                            "iconProps": {
+                                "fit": "cover",
+                                "column": "",
+                                "type": "round"
+                            }
+                        }
+                    },
+                    "applyConditionalFormatting": true,
+                    "drawArea": {
+                        "measure": "",
+                        "showDrawArea": false,
+                        "bounding1": "",
+                        "bounding2": ""
+                    },
+                    "autoFitMode": "keepLabels",
+                    "bins": {
+                        "breakpoints": {
+                            "high": 100,
+                            "low": 0
+                        },
+                        "bands": {
+                            "high": {
+                                "color": "#008000",
+                                "label": ""
+                            },
+                            "low": {
+                                "color": "#B22222",
+                                "label": ""
+                            },
+                            "medium": {
+                                "color": "#ffa500",
+                                "label": ""
+                            }
+                        }
+                    },
+                    "dashLine": {
+                        "measures": "",
+                        "showDashLine": false
+                    },
+                    "fillArea": false,
+                    "columnMap": {
+                        "split": [],
+                        "trellis": [],
+                        "dimensionAxis": [
+                            "Product2.Name",
+                            "RR_Date__c_Year",
+                            "RR_Date__c_Month"
+                        ],
+                        "plots": [
+                            "A"
+                        ]
+                    },
+                    "showActionMenu": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "measureAxis1": {
+                        "sqrtScale": true,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "Avg of Purchase Rate",
+                        "customDomain": {
+                            "high": 1000,
+                            "low": 0,
+                            "showDomain": true
+                        }
+                    },
+                    "step": "Purchase_Rate_Trend_1",
+                    "compactDecimalDigits": -1
+                },
+                "type": "chart"
+            },
+            "chart_3": {
+                "parameters": {
+                    "showPoints": true,
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": true,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "axisMode": "sync",
+                    "tooltip": {
+                        "content": {
+                            "legend": {
+                                "showBinLabel": true,
+                                "measures": [],
+                                "showNullValues": true,
+                                "customizeLegend": false,
+                                "showPercentage": true,
+                                "showDimensions": true,
+                                "showMeasures": true,
+                                "dimensions": []
+                            }
+                        }
+                    },
+                    "visualizationType": "line",
+                    "exploreLink": true,
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "Market Trend Analysis",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "binValues": false,
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "showZero": true,
+                    "valueType": "none",
+                    "theme": "wave",
+                    "dimensionAxis": {
+                        "showTitle": true,
+                        "customSize": "auto",
+                        "showAxis": true,
+                        "title": "Product",
+                        "icons": {
+                            "useIcons": false,
+                            "iconProps": {
+                                "fit": "cover",
+                                "column": "",
+                                "type": "round"
+                            }
+                        }
+                    },
+                    "applyConditionalFormatting": true,
+                    "drawArea": {
+                        "measure": "",
+                        "showDrawArea": false,
+                        "bounding1": "",
+                        "bounding2": ""
+                    },
+                    "autoFitMode": "keepLabels",
+                    "bins": {
+                        "breakpoints": {
+                            "high": 100,
+                            "low": 0
+                        },
+                        "bands": {
+                            "high": {
+                                "color": "#008000",
+                                "label": ""
+                            },
+                            "low": {
+                                "color": "#B22222",
+                                "label": ""
+                            },
+                            "medium": {
+                                "color": "#ffa500",
+                                "label": ""
+                            }
+                        }
+                    },
+                    "dashLine": {
+                        "measures": "",
+                        "showDashLine": false
+                    },
+                    "fillArea": false,
+                    "columnMap": {
+                        "split": [],
+                        "trellis": [],
+                        "dimensionAxis": [
+                            "Product2.Name",
+                            "RR_Date__c_Year",
+                            "RR_Date__c_Month"
+                        ],
+                        "plots": [
+                            "B",
+                            "A"
+                        ]
+                    },
+                    "showActionMenu": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "measureAxis1": {
+                        "sqrtScale": true,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "Avg of Market Rate Trend",
+                        "customDomain": {
+                            "high": 1000,
+                            "low": -2,
+                            "showDomain": true
+                        }
+                    },
+                    "step": "Clone_of_Market_Rate_1",
+                    "compactDecimalDigits": -1
+                },
+                "type": "chart"
+            }
+        },
+        "parameters": []
+    },
+    "datasets": [
+        {
+            "id": "0Fb2w000000sl30CAA",
+            "label": "Line_Item",
+            "name": "Line_Item",
+            "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl30CAA"
+        },
+        {
+            "id": "0Fb2w000000sl31CAA",
+            "label": "Enquiry",
+            "name": "Enquiry",
+            "url": "/services/data/v59.0/wave/datasets/0Fb2w000000sl31CAA"
+        }
+    ]
+}

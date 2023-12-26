@@ -1,0 +1,682 @@
+{
+    "label": "New QS dashboard",
+    "mobileDisabled": false,
+    "state": {
+        "dataSourceLinksInfo": {
+            "enableAutomaticLinking": true,
+            "excludeRelationships": [],
+            "links": []
+        },
+        "filters": [
+            {
+                "dataset": {
+                    "id": "0Fb2w0000006fDrCAI",
+                    "name": "QSTestToday",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w0000006fDrCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "Product_Name__c"
+                ],
+                "label": "Products ",
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w0000006fDrCAI",
+                    "name": "QSTestToday",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w0000006fDrCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "Quality_Specification__c"
+                ],
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb2w0000006fDrCAI",
+                    "name": "QSTestToday",
+                    "url": "/services/data/v59.0/wave/datasets/0Fb2w0000006fDrCAI"
+                },
+                "dependent": true,
+                "fields": [
+                    "Account.Name"
+                ],
+                "label": "Vendors ",
+                "locked": false,
+                "operator": "in"
+            }
+        ],
+        "gridLayouts": [
+            {
+                "name": "Default",
+                "numColumns": 50,
+                "pages": [
+                    {
+                        "label": "Untitled",
+                        "name": "299dff47-95a5-42cb-91b9-b55b8ec9cf8c",
+                        "navigationHidden": false,
+                        "widgets": [
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "table_1",
+                                "row": 2,
+                                "rowspan": 13,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "text_2",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 0,
+                                "name": "filterpanel_1",
+                                "row": 0,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 9,
+                                "name": "filterpanel_2",
+                                "row": 0,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 18,
+                                "name": "filterpanel_3",
+                                "row": 0,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "text_3",
+                                "row": 15,
+                                "rowspan": 1,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 50,
+                                "column": 0,
+                                "name": "table_2",
+                                "row": 16,
+                                "rowspan": 11,
+                                "widgetStyle": {}
+                            }
+                        ]
+                    }
+                ],
+                "rowHeight": "normal",
+                "selectors": [],
+                "style": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "backgroundColor": "#F2F6FA",
+                    "cellSpacingX": 8,
+                    "cellSpacingY": 8,
+                    "fit": "original",
+                    "gutterColor": "#C5D3E0"
+                },
+                "version": 1
+            }
+        ],
+        "layouts": [],
+        "steps": {
+            "QS_Tabular_Standard__1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w0000006fDrCAI",
+                        "label": "QSTestToday",
+                        "name": "QSTestToday",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w0000006fDrCAI"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "QS Tabular Standard Units ",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Product2.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Quality_Sp.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Standard_Text__c",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {},
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "avg",
+                                        "Max_Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product2.Name",
+                                "Quality_Sp.Name",
+                                "Standard_Text__c"
+                            ],
+                            "joins": [],
+                            "name": "QSTestToday"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {},
+                    "parameters": {
+                        "borderColor": "#e0e5ee",
+                        "borderWidth": 1,
+                        "cell": {
+                            "backgroundColor": "#ffffff",
+                            "fontColor": "#16325c",
+                            "fontSize": 12,
+                            "textWrap": false
+                        },
+                        "columnProperties": {},
+                        "columns": [
+                            "A",
+                            "Product2.Name",
+                            "Quality_Sp.Name",
+                            "Standard_Text__c"
+                        ],
+                        "customBulkActions": [],
+                        "header": {
+                            "backgroundColor": "#f4f6f9",
+                            "fontColor": "#16325c",
+                            "fontSize": 12,
+                            "textWrap": false
+                        },
+                        "innerMajorBorderColor": "#a8b7c7",
+                        "innerMinorBorderColor": "#e0e5ee",
+                        "interactions": [],
+                        "mode": "fittocontainer",
+                        "numberOfLines": 1,
+                        "pivoted": false,
+                        "showActionMenu": true,
+                        "showRowIndexColumn": false,
+                        "totals": true,
+                        "verticalPadding": 8
+                    },
+                    "type": "table"
+                }
+            },
+            "lens_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb2w0000006fDrCAI",
+                        "label": "QSTestToday",
+                        "name": "QSTestToday",
+                        "url": "/services/data/v59.0/wave/datasets/0Fb2w0000006fDrCAI"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "lens_1",
+                "query": {
+                    "aggregateFilters": [],
+                    "columnGroups": [],
+                    "columnTotals": [],
+                    "limit": 2000,
+                    "orders": [
+                        {
+                            "name": "Product2.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Account.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Opportunit.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Opportunit.Opportunity_File_Link__c_formula",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Opportunit.Avg_Score_text__c",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Custom_Opp.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Quality_Sp.Name",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "File_Link__c_formula",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Standard_Text__c",
+                            "filters": [],
+                            "ascending": true
+                        },
+                        {
+                            "name": "Actual_Units__c",
+                            "filters": [],
+                            "ascending": true
+                        }
+                    ],
+                    "rowTotals": [],
+                    "sourceFilters": {
+                        "QSTestToday": {
+                            "filters": [
+                                [
+                                    "RecordTypeId",
+                                    [
+                                        "0122w000001rffzAAA"
+                                    ],
+                                    "in"
+                                ]
+                            ]
+                        }
+                    },
+                    "sources": [
+                        {
+                            "columns": [
+                                {
+                                    "field": [
+                                        "sum",
+                                        "Score__c"
+                                    ],
+                                    "name": "A"
+                                }
+                            ],
+                            "filters": [],
+                            "groups": [
+                                "Product2.Name",
+                                "Account.Name",
+                                "Opportunit.Name",
+                                "Opportunit.Opportunity_File_Link__c_formula",
+                                "Opportunit.Avg_Score_text__c",
+                                "Custom_Opp.Name",
+                                "Quality_Sp.Name",
+                                "File_Link__c_formula",
+                                "Standard_Text__c",
+                                "Actual_Units__c"
+                            ],
+                            "joins": [],
+                            "name": "QSTestToday"
+                        }
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {},
+                    "parameters": {
+                        "borderColor": "#a8b7c7",
+                        "borderWidth": 1,
+                        "cell": {
+                            "backgroundColor": "#ffffff",
+                            "fontColor": "#16325c",
+                            "fontSize": 12,
+                            "textWrap": false
+                        },
+                        "columnProperties": {
+                            "Opportunit.Opportunity_File_Link__c_formula": {
+                                "parameters": {
+                                    "alignment": "left",
+                                    "styles": {
+                                        "linkColor": "#006dcc"
+                                    }
+                                },
+                                "type": "text"
+                            },
+                            "File_Link__c_formula": {
+                                "parameters": {
+                                    "alignment": "left",
+                                    "styles": {
+                                        "linkColor": "#006dcc"
+                                    }
+                                },
+                                "type": "text"
+                            }
+                        },
+                        "columns": [
+                            "A",
+                            "Product2.Name",
+                            "Account.Name",
+                            "Opportunit.Name",
+                            "Opportunit.Opportunity_File_Link__c_formula",
+                            "Opportunit.Avg_Score_text__c",
+                            "Custom_Opp.Name",
+                            "Quality_Sp.Name",
+                            "File_Link__c_formula",
+                            "Standard_Text__c",
+                            "Actual_Units__c"
+                        ],
+                        "customBulkActions": [],
+                        "header": {
+                            "backgroundColor": "#16325c",
+                            "fontColor": "#ffffff",
+                            "fontSize": 12,
+                            "textWrap": false
+                        },
+                        "innerMajorBorderColor": "#54698d",
+                        "innerMinorBorderColor": "#a8b7c7",
+                        "interactions": [],
+                        "mode": "fittocontainer",
+                        "numberOfLines": 1,
+                        "pivoted": false,
+                        "showActionMenu": false,
+                        "showRowIndexColumn": false,
+                        "totals": true,
+                        "verticalPadding": 8
+                    },
+                    "type": "table"
+                }
+            }
+        },
+        "widgetStyle": {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#E6ECF2",
+            "borderEdges": [],
+            "borderRadius": 0,
+            "borderWidth": 1
+        },
+        "widgets": {
+            "table_1": {
+                "parameters": {
+                    "borderColor": "#a8b7c7",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "#ffffff",
+                        "fontColor": "#16325c",
+                        "fontSize": 12,
+                        "textWrap": false
+                    },
+                    "columnProperties": {
+                        "Opportunit.Opportunity_File_Link__c_formula": {
+                            "parameters": {
+                                "alignment": "left",
+                                "styles": {
+                                    "linkColor": "#006dcc"
+                                }
+                            },
+                            "type": "text"
+                        },
+                        "File_Link__c_formula": {
+                            "parameters": {
+                                "alignment": "left",
+                                "styles": {
+                                    "linkColor": "#006dcc"
+                                }
+                            },
+                            "type": "text"
+                        }
+                    },
+                    "columns": [
+                        "A",
+                        "Product2.Name",
+                        "Account.Name",
+                        "Opportunit.Name",
+                        "Opportunit.Opportunity_File_Link__c_formula",
+                        "Opportunit.Avg_Score_text__c",
+                        "Custom_Opp.Name",
+                        "Quality_Sp.Name",
+                        "File_Link__c_formula",
+                        "Standard_Text__c",
+                        "Actual_Units__c"
+                    ],
+                    "customBulkActions": [],
+                    "exploreLink": true,
+                    "header": {
+                        "backgroundColor": "#16325c",
+                        "fontColor": "#ffffff",
+                        "fontSize": 12,
+                        "textWrap": false
+                    },
+                    "innerMajorBorderColor": "#54698d",
+                    "innerMinorBorderColor": "#a8b7c7",
+                    "interactions": [],
+                    "mode": "fittocontainer",
+                    "numberOfLines": 1,
+                    "pivoted": false,
+                    "showActionMenu": false,
+                    "showRowIndexColumn": false,
+                    "step": "lens_1",
+                    "totals": true,
+                    "verticalPadding": 8,
+                    "evenRowColor": null,
+                    "oddRowColor": null
+                },
+                "type": "table"
+            },
+            "table_2": {
+                "parameters": {
+                    "borderColor": "#e0e5ee",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "#ffffff",
+                        "fontColor": "#16325c",
+                        "fontSize": 12,
+                        "textWrap": false
+                    },
+                    "columnProperties": {},
+                    "columns": [
+                        "A",
+                        "Product2.Name",
+                        "Quality_Sp.Name",
+                        "Standard_Text__c"
+                    ],
+                    "customBulkActions": [],
+                    "exploreLink": true,
+                    "header": {
+                        "backgroundColor": "#f4f6f9",
+                        "fontColor": "#16325c",
+                        "fontSize": 12,
+                        "textWrap": false
+                    },
+                    "innerMajorBorderColor": "#a8b7c7",
+                    "innerMinorBorderColor": "#e0e5ee",
+                    "interactions": [],
+                    "mode": "fittocontainer",
+                    "numberOfLines": 1,
+                    "pivoted": false,
+                    "showActionMenu": true,
+                    "showRowIndexColumn": false,
+                    "step": "QS_Tabular_Standard__1",
+                    "totals": true,
+                    "verticalPadding": 8,
+                    "evenRowColor": null,
+                    "oddRowColor": null
+                },
+                "type": "table"
+            },
+            "filterpanel_3": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "QSTestToday"
+                            },
+                            "field": "Account.Name"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_2": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "QSTestToday"
+                            },
+                            "field": "Quality_Specification__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "text_3": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "28px",
+                                    "bold": true,
+                                    "italic": true
+                                },
+                                "insert": "Quality Specification: Standard Units"
+                            },
+                            {
+                                "attributes": {
+                                    "align": "center"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "interactions": [],
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "text_2": {
+                "parameters": {
+                    "content": {
+                        "richTextContent": [
+                            {
+                                "attributes": {
+                                    "size": "24px",
+                                    "bold": true,
+                                    "italic": true
+                                },
+                                "insert": "Quality Specification "
+                            },
+                            {
+                                "attributes": {
+                                    "align": "center"
+                                },
+                                "insert": "\n"
+                            }
+                        ]
+                    },
+                    "interactions": [],
+                    "showActionMenu": true
+                },
+                "type": "text"
+            },
+            "filterpanel_1": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "QSTestToday"
+                            },
+                            "field": "Product_Name__c"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            }
+        },
+        "parameters": []
+    },
+    "datasets": [
+        {
+            "id": "0Fb2w0000006fDrCAI",
+            "label": "QSTestToday",
+            "name": "QSTestToday",
+            "url": "/services/data/v59.0/wave/datasets/0Fb2w0000006fDrCAI"
+        }
+    ]
+}
