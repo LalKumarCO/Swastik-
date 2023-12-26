@@ -1,0 +1,771 @@
+{
+    "version": "59.0",
+    "nodes": {
+        "sfdcDigest_Product_Description__c": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "type": "connectedDataset",
+                    "connectionName": "SFDC_LOCAL",
+                    "sourceObjectName": "Product_Description__c"
+                },
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                },
+                "fields": [
+                    "Custom_Opportunity_Product__c",
+                    "Product__c",
+                    "Quality_Specification__c",
+                    "Actual_Units__c",
+                    "Id",
+                    "Name",
+                    "RecordTypeId",
+                    "Standard_Text__c",
+                    "Score__c",
+                    "Max_Score__c",
+                    "File_Link__c"
+                ]
+            },
+            "sources": []
+        },
+        "File_Link_Short": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "formulaExpression": "case when contains(lower(File_Link__c), 'https://') then substr(File_Link__c, 9, 250) when contains(lower(File_Link__c), 'http://') then substr(File_Link__c, 8, 250) else File_Link__c end",
+                        "label": "File_Link",
+                        "name": "File_Link",
+                        "precision": 255,
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "sfdcDigest_Product_Description__c"
+            ]
+        },
+        "sfdcDigest_Custom_Opportunity_Product__c": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "type": "connectedDataset",
+                    "connectionName": "SFDC_LOCAL",
+                    "sourceObjectName": "Custom_Opportunity_Product__c"
+                },
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                },
+                "fields": [
+                    "Opportunity__c",
+                    "Id",
+                    "Account__c",
+                    "Basic_value_1__c",
+                    "Basic_Value_2__c",
+                    "Name",
+                    "Product__c",
+                    "Total_Score__c",
+                    "PD_Count__c",
+                    "Average_Score__c",
+                    "Payment_Days__c",
+                    "Quantity__c",
+                    "Rate_without_GST__c",
+                    "TDS_DISCOUNT__c",
+                    "TDS_REC_ERP__c",
+                    "UOM__c"
+                ]
+            },
+            "sources": []
+        },
+        "augment_Product_Description__c_Custom_Opportunity_Product__c": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "Custom_Opportunity_Product__c"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "Custom_Opportunity_Product__c"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [
+                        "Id",
+                        "Name",
+                        "RecordTypeId",
+                        "Standard_Text__c",
+                        "Actual_Units__c",
+                        "Custom_Opportunity_Product__c",
+                        "Product__c",
+                        "Quality_Specification__c",
+                        "Score__c",
+                        "Max_Score__c",
+                        "File_Link__c",
+                        "File_Link",
+                        "Custom_Opportunity_Product__c.Opportunity__c",
+                        "Custom_Opportunity_Product__c.Account__c",
+                        "Custom_Opportunity_Product__c.Basic_value_1__c",
+                        "Custom_Opportunity_Product__c.Basic_Value_2__c",
+                        "Custom_Opportunity_Product__c.Name",
+                        "Custom_Opportunity_Product__c.Product__c",
+                        "Custom_Opportunity_Product__c.Total_Score__c",
+                        "Custom_Opportunity_Product__c.PD_Count__c",
+                        "Custom_Opportunity_Product__c.Average_Score__c",
+                        "Custom_Opportunity_Product__c.Payment_Days__c",
+                        "Custom_Opportunity_Product__c.Quantity__c",
+                        "Custom_Opportunity_Product__c.Rate_without_GST__c",
+                        "Custom_Opportunity_Product__c.TDS_DISCOUNT__c",
+                        "Custom_Opportunity_Product__c.TDS_REC_ERP__c",
+                        "Custom_Opportunity_Product__c.UOM__c"
+                    ],
+                    "ignoreMissingFields": true,
+                    "mode": "SELECT"
+                }
+            },
+            "sources": [
+                "File_Link_Short",
+                "sfdcDigest_Custom_Opportunity_Product__c"
+            ]
+        },
+        "sfdcDigest_Opportunity": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "type": "connectedDataset",
+                    "connectionName": "SFDC_LOCAL",
+                    "sourceObjectName": "Opportunity"
+                },
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                },
+                "fields": [
+                    "AccountId",
+                    "Id",
+                    "Name",
+                    "Total_Basic_Value__c",
+                    "Average_Score__c",
+                    "Total_Score__c",
+                    "Total_Count__c",
+                    "Avg_Score_text__c",
+                    "RR_Date_Formula__c",
+                    "RR_Date__c",
+                    "RR_Day__c",
+                    "RR_Number__c",
+                    "RR_Year__c",
+                    "Advance_Checked__c",
+                    "Advance_Payment__c",
+                    "BRS_Code__c",
+                    "Company__c",
+                    "Month__c",
+                    "Payment_Date_1__c",
+                    "Payment_Date_2__c",
+                    "Payment_Date_3__c",
+                    "Payment_Date_4__c",
+                    "Payment_done_days_Test1__c",
+                    "Payment_Done_Days__c",
+                    "Payment_done_test__c",
+                    "Payment_REF_1__c",
+                    "Payment_REF_2__c",
+                    "Payment_REF_3__c",
+                    "Payment_REF_4__c",
+                    "Payment_Status__c",
+                    "Payment_Unpaid_Days_Test__c",
+                    "Payment_Unpaid_Days__c",
+                    "Year__c",
+                    "Opportunity_File_Link__c"
+                ]
+            },
+            "sources": []
+        },
+        "augment_Opportunity": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "Custom_Opportunity_Product__c.Opportunity__c"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "Custom_Opportunity_Product__c.Opportunity__c"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [
+                        "Id",
+                        "Name",
+                        "RecordTypeId",
+                        "Standard_Text__c",
+                        "Actual_Units__c",
+                        "Custom_Opportunity_Product__c",
+                        "Product__c",
+                        "Quality_Specification__c",
+                        "Score__c",
+                        "Max_Score__c",
+                        "File_Link__c",
+                        "File_Link",
+                        "Custom_Opportunity_Product__c.Name",
+                        "Custom_Opportunity_Product__c.Opportunity__c",
+                        "Custom_Opportunity_Product__c.Account__c",
+                        "Custom_Opportunity_Product__c.Product__c",
+                        "Custom_Opportunity_Product__c.Basic_value_1__c",
+                        "Custom_Opportunity_Product__c.Basic_Value_2__c",
+                        "Custom_Opportunity_Product__c.Quantity__c",
+                        "Custom_Opportunity_Product__c.UOM__c",
+                        "Custom_Opportunity_Product__c.Rate_without_GST__c",
+                        "Custom_Opportunity_Product__c.TDS_REC_ERP__c",
+                        "Custom_Opportunity_Product__c.TDS_DISCOUNT__c",
+                        "Custom_Opportunity_Product__c.Total_Score__c",
+                        "Custom_Opportunity_Product__c.Payment_Days__c",
+                        "Custom_Opportunity_Product__c.PD_Count__c",
+                        "Custom_Opportunity_Product__c.Average_Score__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.AccountId",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Name",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Total_Basic_Value__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Average_Score__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Total_Score__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Total_Count__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Avg_Score_text__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Date_Formula__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Date__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Day__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Number__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Year__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Advance_Checked__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Advance_Payment__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.BRS_Code__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Company__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Month__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_1__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_2__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_3__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_4__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_done_days_Test1__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Done_Days__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_done_test__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_1__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_2__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_3__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_4__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Status__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Unpaid_Days_Test__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Unpaid_Days__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Year__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Opportunity_File_Link__c"
+                    ],
+                    "ignoreMissingFields": true,
+                    "mode": "SELECT"
+                }
+            },
+            "sources": [
+                "augment_Product_Description__c_Custom_Opportunity_Product__c",
+                "sfdcDigest_Opportunity"
+            ]
+        },
+        "sfdcDigest_Account": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "type": "connectedDataset",
+                    "connectionName": "SFDC_LOCAL",
+                    "sourceObjectName": "Account"
+                },
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                },
+                "fields": [
+                    "Id",
+                    "Name"
+                ]
+            },
+            "sources": []
+        },
+        "augment_Account": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "Custom_Opportunity_Product__c.Opportunity__c.AccountId"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "Custom_Opportunity_Product__c.Opportunity__c.AccountId"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [
+                        "Id",
+                        "Name",
+                        "RecordTypeId",
+                        "Standard_Text__c",
+                        "Actual_Units__c",
+                        "Custom_Opportunity_Product__c",
+                        "Product__c",
+                        "Quality_Specification__c",
+                        "Score__c",
+                        "Max_Score__c",
+                        "File_Link__c",
+                        "File_Link",
+                        "Custom_Opportunity_Product__c.Name",
+                        "Custom_Opportunity_Product__c.Opportunity__c",
+                        "Custom_Opportunity_Product__c.Account__c",
+                        "Custom_Opportunity_Product__c.Product__c",
+                        "Custom_Opportunity_Product__c.Basic_value_1__c",
+                        "Custom_Opportunity_Product__c.Basic_Value_2__c",
+                        "Custom_Opportunity_Product__c.Quantity__c",
+                        "Custom_Opportunity_Product__c.UOM__c",
+                        "Custom_Opportunity_Product__c.Rate_without_GST__c",
+                        "Custom_Opportunity_Product__c.TDS_REC_ERP__c",
+                        "Custom_Opportunity_Product__c.TDS_DISCOUNT__c",
+                        "Custom_Opportunity_Product__c.Total_Score__c",
+                        "Custom_Opportunity_Product__c.Payment_Days__c",
+                        "Custom_Opportunity_Product__c.PD_Count__c",
+                        "Custom_Opportunity_Product__c.Average_Score__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.AccountId",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Name",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Number__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Date__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.BRS_Code__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Company__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Month__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Year__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_1__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_2__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_3__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_4__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_1__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_2__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_3__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_4__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_done_test__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Unpaid_Days__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Total_Basic_Value__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Advance_Payment__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Done_Days__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Status__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Unpaid_Days_Test__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Year__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Date_Formula__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Advance_Checked__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Total_Score__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Total_Count__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Average_Score__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Avg_Score_text__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Day__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_done_days_Test1__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Opportunity_File_Link__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name"
+                    ],
+                    "ignoreMissingFields": true,
+                    "mode": "SELECT"
+                }
+            },
+            "sources": [
+                "augment_Opportunity",
+                "sfdcDigest_Account"
+            ]
+        },
+        "sfdcDigest_Product2": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "type": "connectedDataset",
+                    "connectionName": "SFDC_LOCAL",
+                    "sourceObjectName": "Product2"
+                },
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                },
+                "fields": [
+                    "Id",
+                    "Name"
+                ]
+            },
+            "sources": []
+        },
+        "augment_Product2": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "Product__c"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "Product__c"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [
+                        "Id",
+                        "Name",
+                        "RecordTypeId",
+                        "Standard_Text__c",
+                        "Actual_Units__c",
+                        "Custom_Opportunity_Product__c",
+                        "Product__c",
+                        "Quality_Specification__c",
+                        "Score__c",
+                        "Max_Score__c",
+                        "File_Link__c",
+                        "File_Link",
+                        "Custom_Opportunity_Product__c.Name",
+                        "Custom_Opportunity_Product__c.Opportunity__c",
+                        "Custom_Opportunity_Product__c.Account__c",
+                        "Custom_Opportunity_Product__c.Product__c",
+                        "Custom_Opportunity_Product__c.Basic_value_1__c",
+                        "Custom_Opportunity_Product__c.Basic_Value_2__c",
+                        "Custom_Opportunity_Product__c.Quantity__c",
+                        "Custom_Opportunity_Product__c.UOM__c",
+                        "Custom_Opportunity_Product__c.Rate_without_GST__c",
+                        "Custom_Opportunity_Product__c.TDS_REC_ERP__c",
+                        "Custom_Opportunity_Product__c.TDS_DISCOUNT__c",
+                        "Custom_Opportunity_Product__c.Total_Score__c",
+                        "Custom_Opportunity_Product__c.Payment_Days__c",
+                        "Custom_Opportunity_Product__c.PD_Count__c",
+                        "Custom_Opportunity_Product__c.Average_Score__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.AccountId",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Name",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Number__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Date__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.BRS_Code__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Company__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Month__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Year__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_1__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_2__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_3__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_4__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_1__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_2__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_3__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_4__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_done_test__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Unpaid_Days__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Total_Basic_Value__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Advance_Payment__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Done_Days__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Status__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Unpaid_Days_Test__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Year__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Date_Formula__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Advance_Checked__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Total_Score__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Total_Count__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Average_Score__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Avg_Score_text__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Day__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_done_days_Test1__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Opportunity_File_Link__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name",
+                        "Product__c.Name"
+                    ],
+                    "ignoreMissingFields": true,
+                    "mode": "SELECT"
+                }
+            },
+            "sources": [
+                "augment_Account",
+                "sfdcDigest_Product2"
+            ]
+        },
+        "sfdcDigest_Quality_Specification__c": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "type": "connectedDataset",
+                    "connectionName": "SFDC_LOCAL",
+                    "sourceObjectName": "Quality_Specification__c"
+                },
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                },
+                "fields": [
+                    "Id",
+                    "Name"
+                ]
+            },
+            "sources": []
+        },
+        "augment_Quality_Specification__c": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "Quality_Specification__c"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "Quality_Specification__c"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [
+                        "Id",
+                        "Name",
+                        "RecordTypeId",
+                        "Standard_Text__c",
+                        "Actual_Units__c",
+                        "Custom_Opportunity_Product__c",
+                        "Product__c",
+                        "Quality_Specification__c",
+                        "Score__c",
+                        "Max_Score__c",
+                        "File_Link__c",
+                        "File_Link",
+                        "Custom_Opportunity_Product__c.Name",
+                        "Custom_Opportunity_Product__c.Opportunity__c",
+                        "Custom_Opportunity_Product__c.Account__c",
+                        "Custom_Opportunity_Product__c.Product__c",
+                        "Custom_Opportunity_Product__c.Basic_value_1__c",
+                        "Custom_Opportunity_Product__c.Basic_Value_2__c",
+                        "Custom_Opportunity_Product__c.Quantity__c",
+                        "Custom_Opportunity_Product__c.UOM__c",
+                        "Custom_Opportunity_Product__c.Rate_without_GST__c",
+                        "Custom_Opportunity_Product__c.TDS_REC_ERP__c",
+                        "Custom_Opportunity_Product__c.TDS_DISCOUNT__c",
+                        "Custom_Opportunity_Product__c.Total_Score__c",
+                        "Custom_Opportunity_Product__c.Payment_Days__c",
+                        "Custom_Opportunity_Product__c.PD_Count__c",
+                        "Custom_Opportunity_Product__c.Average_Score__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.AccountId",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Name",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Number__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Date__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.BRS_Code__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Company__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Month__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Year__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_1__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_2__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_3__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Date_4__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_1__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_2__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_3__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_REF_4__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_done_test__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Unpaid_Days__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Total_Basic_Value__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Advance_Payment__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Done_Days__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Status__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_Unpaid_Days_Test__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Year__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Date_Formula__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Advance_Checked__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Total_Score__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Total_Count__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Average_Score__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Avg_Score_text__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.RR_Day__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Payment_done_days_Test1__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.Opportunity_File_Link__c",
+                        "Custom_Opportunity_Product__c.Opportunity__c.AccountId.Name",
+                        "Product__c.Name",
+                        "Quality_Specification__c.Name"
+                    ],
+                    "ignoreMissingFields": true,
+                    "mode": "SELECT"
+                }
+            },
+            "sources": [
+                "augment_Product2",
+                "sfdcDigest_Quality_Specification__c"
+            ]
+        },
+        "register_QualitySpecification ": {
+            "action": "save",
+            "parameters": {
+                "dataset": {
+                    "folderName": "Swastik_App",
+                    "isStaged": false,
+                    "label": "QualitySpecification ",
+                    "name": "QualitySpecification_df2R3",
+                    "type": "analyticsDataset"
+                },
+                "fields": [],
+                "measuresToCurrencies": []
+            },
+            "sources": [
+                "augment_Quality_Specification__c"
+            ]
+        }
+    },
+    "ui": {
+        "nodes": {
+            "sfdcDigest_Product_Description__c": {
+                "label": "sfdcDigest_Product_Description__c",
+                "type": "LOAD_DATASET",
+                "top": 112,
+                "left": 112,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "TRANSFORM0": {
+                "label": "File_Link_Short",
+                "type": "TRANSFORM",
+                "top": 112,
+                "left": 252,
+                "graph": {
+                    "File_Link_Short": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        }
+                    }
+                },
+                "connectors": []
+            },
+            "sfdcDigest_Custom_Opportunity_Product__c": {
+                "label": "sfdcDigest_Custom_Opportunity_Product__c",
+                "type": "LOAD_DATASET",
+                "top": 252,
+                "left": 252,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "augment_Product_Description__c_Custom_Opportunity_Product__c": {
+                "label": "augment_Product_Description__c_Custom_Opportunity_Product__c",
+                "type": "JOIN",
+                "top": 112,
+                "left": 392
+            },
+            "sfdcDigest_Opportunity": {
+                "label": "sfdcDigest_Opportunity",
+                "type": "LOAD_DATASET",
+                "top": 252,
+                "left": 392,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "augment_Opportunity": {
+                "label": "augment_Opportunity",
+                "type": "JOIN",
+                "top": 112,
+                "left": 532
+            },
+            "sfdcDigest_Account": {
+                "label": "sfdcDigest_Account",
+                "type": "LOAD_DATASET",
+                "top": 252,
+                "left": 532,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "augment_Account": {
+                "label": "augment_Account",
+                "type": "JOIN",
+                "top": 112,
+                "left": 672
+            },
+            "sfdcDigest_Product2": {
+                "label": "sfdcDigest_Product2",
+                "type": "LOAD_DATASET",
+                "top": 252,
+                "left": 672,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "augment_Product2": {
+                "label": "augment_Product2",
+                "type": "JOIN",
+                "top": 112,
+                "left": 812
+            },
+            "sfdcDigest_Quality_Specification__c": {
+                "label": "sfdcDigest_Quality_Specification__c",
+                "type": "LOAD_DATASET",
+                "top": 252,
+                "left": 812,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "augment_Quality_Specification__c": {
+                "label": "augment_Quality_Specification__c",
+                "type": "JOIN",
+                "top": 112,
+                "left": 952
+            },
+            "register_QualitySpecification ": {
+                "label": "register_QualitySpecification ",
+                "type": "OUTPUT",
+                "top": 112,
+                "left": 1092
+            }
+        },
+        "connectors": [
+            {
+                "source": "sfdcDigest_Product_Description__c",
+                "target": "TRANSFORM0"
+            },
+            {
+                "source": "TRANSFORM0",
+                "target": "augment_Product_Description__c_Custom_Opportunity_Product__c"
+            },
+            {
+                "source": "sfdcDigest_Custom_Opportunity_Product__c",
+                "target": "augment_Product_Description__c_Custom_Opportunity_Product__c"
+            },
+            {
+                "source": "augment_Product_Description__c_Custom_Opportunity_Product__c",
+                "target": "augment_Opportunity"
+            },
+            {
+                "source": "sfdcDigest_Opportunity",
+                "target": "augment_Opportunity"
+            },
+            {
+                "source": "augment_Opportunity",
+                "target": "augment_Account"
+            },
+            {
+                "source": "sfdcDigest_Account",
+                "target": "augment_Account"
+            },
+            {
+                "source": "augment_Account",
+                "target": "augment_Product2"
+            },
+            {
+                "source": "sfdcDigest_Product2",
+                "target": "augment_Product2"
+            },
+            {
+                "source": "augment_Product2",
+                "target": "augment_Quality_Specification__c"
+            },
+            {
+                "source": "sfdcDigest_Quality_Specification__c",
+                "target": "augment_Quality_Specification__c"
+            },
+            {
+                "source": "augment_Quality_Specification__c",
+                "target": "register_QualitySpecification "
+            }
+        ],
+        "hiddenColumns": []
+    }
+}

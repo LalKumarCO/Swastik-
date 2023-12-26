@@ -1,0 +1,323 @@
+{
+    "version": "59.0",
+    "nodes": {
+        "LOAD_DATASET0": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "connectionName": "SFDC_LOCAL",
+                    "label": "Product2",
+                    "sourceObjectName": "Product2",
+                    "type": "connectedDataset"
+                },
+                "fields": [
+                    "Id",
+                    "Name",
+                    "QuantityUnitOfMeasure"
+                ],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "LOAD_DATASET2": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "connectionName": "SFDC_LOCAL",
+                    "label": "Custom_Opportunity_Product__c",
+                    "sourceObjectName": "Custom_Opportunity_Product__c",
+                    "type": "connectedDataset"
+                },
+                "fields": [
+                    "Id",
+                    "Name",
+                    "Opportunity__c",
+                    "Account__c",
+                    "Product__c",
+                    "Basic_value_1__c",
+                    "Basic_Value_2__c",
+                    "Quantity__c",
+                    "UOM__c",
+                    "Rate_without_GST__c",
+                    "TDS_REC_ERP__c",
+                    "TDS_DISCOUNT__c",
+                    "Total_Score__c",
+                    "Payment_Days__c",
+                    "PD_Count__c",
+                    "Average_Score__c",
+                    "Invoice_Number__c",
+                    "Products__c"
+                ],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "JOIN0": {
+            "action": "join",
+            "parameters": {
+                "joinType": "INNER",
+                "leftKeys": [
+                    "Id"
+                ],
+                "rightKeys": [
+                    "Product__c"
+                ],
+                "rightQualifier": "Custom_Opp"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [],
+                    "ignoreMissingFields": true,
+                    "mode": "DROP"
+                }
+            },
+            "sources": [
+                "LOAD_DATASET0",
+                "LOAD_DATASET2"
+            ]
+        },
+        "OUTPUT0": {
+            "action": "save",
+            "parameters": {
+                "dataset": {
+                    "folderName": "Parthasarathi_test_app",
+                    "label": "PR_Product_07-10-2023",
+                    "name": "PR_Product_07_10_2023",
+                    "type": "analyticsDataset"
+                },
+                "fields": [],
+                "measuresToCurrencies": []
+            },
+            "sources": [
+                "JOIN0"
+            ]
+        },
+        "LOAD_DATASET3": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "connectionName": "SFDC_LOCAL",
+                    "label": "Advance_Payment__c",
+                    "sourceObjectName": "Advance_Payment__c",
+                    "type": "connectedDataset"
+                },
+                "fields": [
+                    "Id",
+                    "OwnerId",
+                    "IsDeleted",
+                    "Name",
+                    "CreatedDate",
+                    "CreatedById",
+                    "LastModifiedDate",
+                    "LastModifiedById",
+                    "SystemModstamp",
+                    "LastActivityDate",
+                    "LastViewedDate",
+                    "LastReferencedDate",
+                    "Payment_Amount__c",
+                    "Payment_Date__c",
+                    "Account__c",
+                    "Payment_Reference_Number__c",
+                    "Advance_Adjusted__c",
+                    "Advance_Status__c",
+                    "Total_Opportunity_Amount__c"
+                ],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "LOAD_DATASET4": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "connectionName": "SFDC_LOCAL",
+                    "label": "Account",
+                    "sourceObjectName": "Account",
+                    "type": "connectedDataset"
+                },
+                "fields": [
+                    "Id",
+                    "MasterRecordId",
+                    "Name",
+                    "Type",
+                    "ParentId",
+                    "BillingStreet",
+                    "BillingCity",
+                    "BillingState",
+                    "BillingPostalCode",
+                    "BillingCountry",
+                    "ShippingStreet",
+                    "ShippingCity",
+                    "ShippingState",
+                    "ShippingPostalCode",
+                    "ShippingCountry",
+                    "Phone",
+                    "PhotoUrl",
+                    "Industry",
+                    "NumberOfEmployees",
+                    "OwnerId",
+                    "CreatedDate",
+                    "LastModifiedDate",
+                    "LastActivityDate",
+                    "LastViewedDate",
+                    "AccountSource",
+                    "Email__c",
+                    "GST_Number__c",
+                    "Payment_Days__c",
+                    "Opportunity_Count__c",
+                    "Avg_Payment_Days__c",
+                    "State__c",
+                    "Advance_Amount__c",
+                    "Advance_Adjusted__c"
+                ],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "JOIN1": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LEFT_OUTER",
+                "leftKeys": [
+                    "Id"
+                ],
+                "rightKeys": [
+                    "Account__c"
+                ],
+                "rightQualifier": "Advance_Pa"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [],
+                    "ignoreMissingFields": true,
+                    "mode": "DROP"
+                }
+            },
+            "sources": [
+                "LOAD_DATASET4",
+                "LOAD_DATASET3"
+            ]
+        },
+        "OUTPUT1": {
+            "action": "save",
+            "parameters": {
+                "dataset": {
+                    "folderName": "Parthasarathi_test_app",
+                    "label": "PR_AccountAdvancePay_07102023",
+                    "name": "PR_AccountAdvancePay_07102023",
+                    "type": "analyticsDataset"
+                },
+                "fields": [],
+                "measuresToCurrencies": []
+            },
+            "sources": [
+                "JOIN1"
+            ]
+        }
+    },
+    "ui": {
+        "nodes": {
+            "LOAD_DATASET0": {
+                "label": "Product2",
+                "type": "LOAD_DATASET",
+                "top": 112,
+                "left": 112,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "LOAD_DATASET2": {
+                "label": "Custom_Opportunity_Product__c",
+                "type": "LOAD_DATASET",
+                "top": 252.10000000000002,
+                "left": 111.9,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "JOIN0": {
+                "label": "Join 0",
+                "type": "JOIN",
+                "top": 112,
+                "left": 252
+            },
+            "OUTPUT0": {
+                "label": "Output 0",
+                "type": "OUTPUT",
+                "top": 112,
+                "left": 392
+            },
+            "LOAD_DATASET3": {
+                "label": "Advance_Payment__c",
+                "type": "LOAD_DATASET",
+                "top": 532.1,
+                "left": 111.9,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "LOAD_DATASET4": {
+                "label": "Account",
+                "type": "LOAD_DATASET",
+                "top": 392.3,
+                "left": 111.9,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "JOIN1": {
+                "label": "Join 1",
+                "type": "JOIN",
+                "top": 392,
+                "left": 252
+            },
+            "OUTPUT1": {
+                "label": "Output 1",
+                "type": "OUTPUT",
+                "top": 392,
+                "left": 392
+            }
+        },
+        "connectors": [
+            {
+                "source": "LOAD_DATASET0",
+                "target": "JOIN0"
+            },
+            {
+                "source": "LOAD_DATASET2",
+                "target": "JOIN0"
+            },
+            {
+                "source": "JOIN0",
+                "target": "OUTPUT0"
+            },
+            {
+                "source": "LOAD_DATASET4",
+                "target": "JOIN1"
+            },
+            {
+                "source": "LOAD_DATASET3",
+                "target": "JOIN1"
+            },
+            {
+                "source": "JOIN1",
+                "target": "OUTPUT1"
+            }
+        ],
+        "hiddenColumns": []
+    }
+}

@@ -1,0 +1,521 @@
+{
+    "version": "59.0",
+    "nodes": {
+        "sfdcDigest_Opportunity": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "type": "connectedDataset",
+                    "connectionName": "SFDC_LOCAL",
+                    "sourceObjectName": "Opportunity"
+                },
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                },
+                "fields": [
+                    "AccountId",
+                    "Advance_Payment__c",
+                    "Advance_Checked__c",
+                    "Average_Score__c",
+                    "Avg_Score_text__c",
+                    "BRS_Code__c",
+                    "CloseDate",
+                    "Company__c",
+                    "Id",
+                    "Invoice_Number__c",
+                    "Month__c",
+                    "Name",
+                    "Payment_Date_1__c",
+                    "Payment_Date_2__c",
+                    "Payment_Date_3__c",
+                    "Payment_Date_4__c",
+                    "Payment_Done_Days__c",
+                    "Payment_done_test__c",
+                    "Payment_REF_1__c",
+                    "Payment_REF_2__c",
+                    "Payment_REF_3__c",
+                    "Payment_REF_4__c",
+                    "Payment_Status__c",
+                    "Payment_Unpaid_Days_Test__c",
+                    "Payment_Unpaid_Days__c",
+                    "RR_Date__c",
+                    "RR_Date_Formula__c",
+                    "RR_Day__c",
+                    "RR_Number__c",
+                    "RR_Year__c",
+                    "Total_Basic_Value__c",
+                    "Total_Count__c",
+                    "Total_Score__c",
+                    "Type",
+                    "Year__c"
+                ]
+            },
+            "sources": []
+        },
+        "sfdcDigest_Account": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "type": "connectedDataset",
+                    "connectionName": "SFDC_LOCAL",
+                    "sourceObjectName": "Account"
+                },
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                },
+                "fields": [
+                    "Id",
+                    "Name"
+                ]
+            },
+            "sources": []
+        },
+        "augment_Opportunity_Account": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "AccountId"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "AccountId"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [
+                        "Id",
+                        "AccountId",
+                        "Name",
+                        "CloseDate",
+                        "Type",
+                        "Invoice_Number__c",
+                        "RR_Number__c",
+                        "RR_Date__c",
+                        "BRS_Code__c",
+                        "Company__c",
+                        "Month__c",
+                        "Year__c",
+                        "Payment_Date_1__c",
+                        "Payment_Date_2__c",
+                        "Payment_Date_3__c",
+                        "Payment_Date_4__c",
+                        "Payment_REF_1__c",
+                        "Payment_REF_2__c",
+                        "Payment_REF_3__c",
+                        "Payment_REF_4__c",
+                        "Payment_done_test__c",
+                        "Payment_Unpaid_Days__c",
+                        "Total_Basic_Value__c",
+                        "Advance_Payment__c",
+                        "Payment_Done_Days__c",
+                        "Payment_Status__c",
+                        "Payment_Unpaid_Days_Test__c",
+                        "RR_Year__c",
+                        "RR_Date_Formula__c",
+                        "Advance_Checked__c",
+                        "Total_Score__c",
+                        "Total_Count__c",
+                        "Average_Score__c",
+                        "Avg_Score_text__c",
+                        "RR_Day__c",
+                        "AccountId.Name"
+                    ],
+                    "ignoreMissingFields": true,
+                    "mode": "SELECT"
+                }
+            },
+            "sources": [
+                "sfdcDigest_Opportunity",
+                "sfdcDigest_Account"
+            ]
+        },
+        "sfdcDigest_Advance_Payment__c": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "type": "connectedDataset",
+                    "connectionName": "SFDC_LOCAL",
+                    "sourceObjectName": "Advance_Payment__c"
+                },
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                },
+                "fields": [
+                    "Id",
+                    "Account__c",
+                    "Advance_Adjusted__c",
+                    "Name",
+                    "Payment_Amount__c",
+                    "Payment_Date__c",
+                    "Payment_Reference_Number__c"
+                ]
+            },
+            "sources": []
+        },
+        "augment_Advance_Payment__c": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "Advance_Payment__c"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "Advance_Payment__c"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [
+                        "Id",
+                        "AccountId",
+                        "Name",
+                        "CloseDate",
+                        "Type",
+                        "Invoice_Number__c",
+                        "RR_Number__c",
+                        "RR_Date__c",
+                        "BRS_Code__c",
+                        "Company__c",
+                        "Month__c",
+                        "Year__c",
+                        "Payment_Date_1__c",
+                        "Payment_Date_2__c",
+                        "Payment_Date_3__c",
+                        "Payment_Date_4__c",
+                        "Payment_REF_1__c",
+                        "Payment_REF_2__c",
+                        "Payment_REF_3__c",
+                        "Payment_REF_4__c",
+                        "Payment_done_test__c",
+                        "Payment_Unpaid_Days__c",
+                        "Total_Basic_Value__c",
+                        "Advance_Payment__c",
+                        "Payment_Done_Days__c",
+                        "Payment_Status__c",
+                        "Payment_Unpaid_Days_Test__c",
+                        "RR_Year__c",
+                        "RR_Date_Formula__c",
+                        "Advance_Checked__c",
+                        "Total_Score__c",
+                        "Total_Count__c",
+                        "Average_Score__c",
+                        "Avg_Score_text__c",
+                        "RR_Day__c",
+                        "AccountId.Name",
+                        "Advance_Payment__c.Account__c",
+                        "Advance_Payment__c.Advance_Adjusted__c",
+                        "Advance_Payment__c.Name",
+                        "Advance_Payment__c.Payment_Amount__c",
+                        "Advance_Payment__c.Payment_Date__c",
+                        "Advance_Payment__c.Payment_Reference_Number__c"
+                    ],
+                    "ignoreMissingFields": true,
+                    "mode": "SELECT"
+                }
+            },
+            "sources": [
+                "augment_Opportunity_Account",
+                "sfdcDigest_Advance_Payment__c"
+            ]
+        },
+        "register_PaymentTest": {
+            "action": "save",
+            "parameters": {
+                "dataset": {
+                    "folderName": "Swastik_App",
+                    "isStaged": false,
+                    "label": "PaymentTest",
+                    "name": "PaymentTest_df2R3",
+                    "type": "analyticsDataset"
+                },
+                "fields": [],
+                "measuresToCurrencies": []
+            },
+            "sources": [
+                "augment_Advance_Payment__c"
+            ]
+        },
+        "sfdcDigest_Opportunity_0": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "type": "connectedDataset",
+                    "connectionName": "SFDC_LOCAL",
+                    "sourceObjectName": "Opportunity"
+                },
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                },
+                "fields": [
+                    "AccountId",
+                    "Advance_Checked__c",
+                    "Advance_Payment__c",
+                    "Average_Score__c",
+                    "Avg_Score_text__c",
+                    "Month__c",
+                    "Name",
+                    "Payment_Date_1__c",
+                    "Payment_Date_2__c",
+                    "Payment_Date_3__c",
+                    "Payment_Date_4__c",
+                    "Payment_Done_Days__c",
+                    "Payment_done_test__c",
+                    "Payment_REF_1__c",
+                    "Payment_REF_2__c",
+                    "Payment_Status__c",
+                    "Payment_Unpaid_Days_Test__c",
+                    "Payment_Unpaid_Days__c",
+                    "Total_Basic_Value__c",
+                    "Total_Count__c",
+                    "Total_Score__c",
+                    "Year__c",
+                    "BRS_Code__c",
+                    "CloseDate",
+                    "Company__c",
+                    "Invoice_Number__c",
+                    "Id",
+                    "Payment_REF_3__c",
+                    "Payment_REF_4__c",
+                    "RR_Date_Formula__c",
+                    "RR_Date__c",
+                    "RR_Day__c",
+                    "RR_Number__c",
+                    "RR_Year__c",
+                    "Type",
+                    "Payment_done_days_Test1__c",
+                    "Payment_DD__c"
+                ]
+            },
+            "sources": []
+        },
+        "sfdcDigest_Account_0": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "type": "connectedDataset",
+                    "connectionName": "SFDC_LOCAL",
+                    "sourceObjectName": "Account"
+                },
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                },
+                "fields": [
+                    "Id",
+                    "Name",
+                    "Avg_Payment_Days__c",
+                    "Opportunity_Count__c",
+                    "Payment_Days__c"
+                ]
+            },
+            "sources": []
+        },
+        "augment_Opportunity_Account_0": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "AccountId"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "AccountId"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [
+                        "Id",
+                        "AccountId",
+                        "Name",
+                        "CloseDate",
+                        "Type",
+                        "Invoice_Number__c",
+                        "RR_Number__c",
+                        "RR_Date__c",
+                        "BRS_Code__c",
+                        "Company__c",
+                        "Month__c",
+                        "Year__c",
+                        "Payment_Date_1__c",
+                        "Payment_Date_2__c",
+                        "Payment_Date_3__c",
+                        "Payment_Date_4__c",
+                        "Payment_REF_1__c",
+                        "Payment_REF_2__c",
+                        "Payment_REF_3__c",
+                        "Payment_REF_4__c",
+                        "Payment_done_test__c",
+                        "Payment_Unpaid_Days__c",
+                        "Total_Basic_Value__c",
+                        "Advance_Payment__c",
+                        "Payment_Done_Days__c",
+                        "Payment_Status__c",
+                        "Payment_Unpaid_Days_Test__c",
+                        "RR_Year__c",
+                        "RR_Date_Formula__c",
+                        "Advance_Checked__c",
+                        "Total_Score__c",
+                        "Total_Count__c",
+                        "Average_Score__c",
+                        "Avg_Score_text__c",
+                        "RR_Day__c",
+                        "Payment_done_days_Test1__c",
+                        "Payment_DD__c",
+                        "AccountId.Name",
+                        "AccountId.Avg_Payment_Days__c",
+                        "AccountId.Opportunity_Count__c",
+                        "AccountId.Payment_Days__c"
+                    ],
+                    "ignoreMissingFields": true,
+                    "mode": "SELECT"
+                }
+            },
+            "sources": [
+                "sfdcDigest_Opportunity_0",
+                "sfdcDigest_Account_0"
+            ]
+        },
+        "register_NewPayment_0": {
+            "action": "save",
+            "parameters": {
+                "dataset": {
+                    "folderName": "Swastik_App",
+                    "isStaged": false,
+                    "label": "NewPayment",
+                    "name": "NewPayment_df2R3",
+                    "type": "analyticsDataset"
+                },
+                "fields": [],
+                "measuresToCurrencies": []
+            },
+            "sources": [
+                "augment_Opportunity_Account_0"
+            ]
+        }
+    },
+    "ui": {
+        "nodes": {
+            "sfdcDigest_Opportunity": {
+                "label": "sfdcDigest_Opportunity",
+                "type": "LOAD_DATASET",
+                "top": 112,
+                "left": 112,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "sfdcDigest_Account": {
+                "label": "sfdcDigest_Account",
+                "type": "LOAD_DATASET",
+                "top": 252,
+                "left": 112,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "augment_Opportunity_Account": {
+                "label": "augment_Opportunity_Account",
+                "type": "JOIN",
+                "top": 112,
+                "left": 252
+            },
+            "sfdcDigest_Advance_Payment__c": {
+                "label": "sfdcDigest_Advance_Payment__c",
+                "type": "LOAD_DATASET",
+                "top": 252,
+                "left": 252,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "augment_Advance_Payment__c": {
+                "label": "augment_Advance_Payment__c",
+                "type": "JOIN",
+                "top": 112,
+                "left": 392
+            },
+            "register_PaymentTest": {
+                "label": "register_PaymentTest",
+                "type": "OUTPUT",
+                "top": 112,
+                "left": 532
+            },
+            "sfdcDigest_Opportunity_0": {
+                "label": "sfdcDigest_Opportunity_0",
+                "type": "LOAD_DATASET",
+                "top": 392,
+                "left": 112,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "sfdcDigest_Account_0": {
+                "label": "sfdcDigest_Account_0",
+                "type": "LOAD_DATASET",
+                "top": 532,
+                "left": 112,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "augment_Opportunity_Account_0": {
+                "label": "augment_Opportunity_Account_0",
+                "type": "JOIN",
+                "top": 392,
+                "left": 252
+            },
+            "register_NewPayment_0": {
+                "label": "register_NewPayment_0",
+                "type": "OUTPUT",
+                "top": 392,
+                "left": 392
+            }
+        },
+        "connectors": [
+            {
+                "source": "sfdcDigest_Opportunity",
+                "target": "augment_Opportunity_Account"
+            },
+            {
+                "source": "sfdcDigest_Account",
+                "target": "augment_Opportunity_Account"
+            },
+            {
+                "source": "augment_Opportunity_Account",
+                "target": "augment_Advance_Payment__c"
+            },
+            {
+                "source": "sfdcDigest_Advance_Payment__c",
+                "target": "augment_Advance_Payment__c"
+            },
+            {
+                "source": "augment_Advance_Payment__c",
+                "target": "register_PaymentTest"
+            },
+            {
+                "source": "sfdcDigest_Opportunity_0",
+                "target": "augment_Opportunity_Account_0"
+            },
+            {
+                "source": "sfdcDigest_Account_0",
+                "target": "augment_Opportunity_Account_0"
+            },
+            {
+                "source": "augment_Opportunity_Account_0",
+                "target": "register_NewPayment_0"
+            }
+        ],
+        "hiddenColumns": []
+    }
+}

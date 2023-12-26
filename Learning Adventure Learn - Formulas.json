@@ -1,0 +1,233 @@
+{
+    "version": "59.0",
+    "nodes": {
+        "LOAD_DATASET0": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "label": "Quota_Region",
+                    "name": "Quota_Region",
+                    "type": "analyticsDataset"
+                },
+                "fields": [
+                    "Employee",
+                    "Year",
+                    "Quota"
+                ],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "LOAD_DATASET1": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "label": "Opportunity_Region",
+                    "name": "Opportunity_Region",
+                    "type": "analyticsDataset"
+                },
+                "fields": [
+                    "Industry",
+                    "Opportunity_Name",
+                    "Account_Owner",
+                    "Product_Name",
+                    "Region",
+                    "Stage",
+                    "Close_Date_Year",
+                    "Close_Date_Month",
+                    "Amount",
+                    "Probability",
+                    "Order_Quantity"
+                ],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "EXTRACT0": {
+            "action": "extractGrains",
+            "parameters": {
+                "grainExtractions": []
+            },
+            "sources": [
+                "LOAD_DATASET1"
+            ]
+        },
+        "AGGREGATE1": {
+            "action": "aggregate",
+            "parameters": {
+                "aggregations": [
+                    {
+                        "action": "SUM",
+                        "label": "Sum of Amount",
+                        "name": "SUM_Amount",
+                        "source": "Amount"
+                    }
+                ],
+                "groupings": [
+                    "Account_Owner"
+                ],
+                "nodeType": "STANDARD",
+                "pivots": []
+            },
+            "sources": [
+                "EXTRACT0"
+            ]
+        },
+        "JOIN0": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "Account_Owner"
+                ],
+                "rightKeys": [
+                    "Employee"
+                ],
+                "rightQualifier": "Quota"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [],
+                    "ignoreMissingFields": true,
+                    "mode": "DROP"
+                }
+            },
+            "sources": [
+                "AGGREGATE1",
+                "LOAD_DATASET0"
+            ]
+        },
+        "FORMULA0": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "SUM_Amount-\"Quota.Quota\"",
+                        "label": "Quota Attainment",
+                        "name": "Account_Owner_formula",
+                        "precision": 10,
+                        "scale": 0,
+                        "type": "NUMBER"
+                    }
+                ]
+            },
+            "sources": [
+                "JOIN0"
+            ]
+        },
+        "OUTPUT0": {
+            "action": "save",
+            "parameters": {
+                "dataset": {
+                    "folderName": "Learning_Adventure",
+                    "label": "Learn - Formulas",
+                    "name": "Learn_Formulas",
+                    "type": "analyticsDataset"
+                },
+                "fields": [],
+                "measuresToCurrencies": []
+            },
+            "sources": [
+                "FORMULA0"
+            ]
+        }
+    },
+    "ui": {
+        "nodes": {
+            "LOAD_DATASET0": {
+                "label": "Quota_Region",
+                "description": "",
+                "type": "LOAD_DATASET",
+                "top": 112,
+                "left": 112,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "LOAD_DATASET1": {
+                "label": "Opportunities",
+                "type": "LOAD_DATASET",
+                "top": 252,
+                "left": 112,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "AGGREGATE0": {
+                "label": "Aggregate by Account Owner",
+                "description": "",
+                "type": "AGGREGATE",
+                "top": 252,
+                "left": 252,
+                "graph": {
+                    "EXTRACT0": null,
+                    "AGGREGATE1": null
+                },
+                "connectors": [
+                    {
+                        "source": "EXTRACT0",
+                        "target": "AGGREGATE1"
+                    }
+                ]
+            },
+            "JOIN0": {
+                "label": "Join Opps and Quotas",
+                "type": "JOIN",
+                "top": 252,
+                "left": 392
+            },
+            "TRANSFORM0": {
+                "label": "Formula Transform Calculate Quota Attainment",
+                "type": "TRANSFORM",
+                "top": 252,
+                "left": 532,
+                "graph": {
+                    "FORMULA0": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        }
+                    }
+                },
+                "connectors": []
+            },
+            "OUTPUT0": {
+                "label": "Output",
+                "type": "OUTPUT",
+                "top": 252,
+                "left": 672
+            }
+        },
+        "connectors": [
+            {
+                "source": "LOAD_DATASET1",
+                "target": "AGGREGATE0"
+            },
+            {
+                "source": "AGGREGATE0",
+                "target": "JOIN0"
+            },
+            {
+                "source": "LOAD_DATASET0",
+                "target": "JOIN0"
+            },
+            {
+                "source": "JOIN0",
+                "target": "TRANSFORM0"
+            },
+            {
+                "source": "TRANSFORM0",
+                "target": "OUTPUT0"
+            }
+        ],
+        "hiddenColumns": []
+    }
+}

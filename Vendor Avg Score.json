@@ -1,0 +1,140 @@
+{
+    "version": "59.0",
+    "nodes": {
+        "LOAD_DATASET0": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "connectionName": "SFDC_LOCAL",
+                    "label": "Account",
+                    "sourceObjectName": "Account",
+                    "type": "connectedDataset"
+                },
+                "fields": [
+                    "Id",
+                    "Name"
+                ],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "LOAD_DATASET1": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "connectionName": "SFDC_LOCAL",
+                    "label": "Opportunity",
+                    "sourceObjectName": "Opportunity",
+                    "type": "connectedDataset"
+                },
+                "fields": [
+                    "AccountId",
+                    "Payment_Unpaid_Days__c",
+                    "Payment_Status__c",
+                    "Payment_Unpaid_Days_Test__c",
+                    "Average_Score__c",
+                    "Payment_DD__c",
+                    "Name"
+                ],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "JOIN0": {
+            "action": "join",
+            "parameters": {
+                "joinType": "INNER",
+                "leftKeys": [
+                    "AccountId"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "Account"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [],
+                    "ignoreMissingFields": true,
+                    "mode": "DROP"
+                }
+            },
+            "sources": [
+                "LOAD_DATASET1",
+                "LOAD_DATASET0"
+            ]
+        },
+        "OUTPUT0": {
+            "action": "save",
+            "parameters": {
+                "dataset": {
+                    "folderName": "Swastik_App",
+                    "label": "VendorAvgScore",
+                    "name": "VendorAvgScore",
+                    "type": "analyticsDataset"
+                },
+                "fields": [],
+                "measuresToCurrencies": []
+            },
+            "sources": [
+                "JOIN0"
+            ]
+        }
+    },
+    "ui": {
+        "nodes": {
+            "LOAD_DATASET0": {
+                "label": "Account",
+                "type": "LOAD_DATASET",
+                "top": 251.89999999999998,
+                "left": 112.69999999999999,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "LOAD_DATASET1": {
+                "label": "Opportunity",
+                "type": "LOAD_DATASET",
+                "top": 112.69999999999999,
+                "left": 111.80000000000001,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "JOIN0": {
+                "label": "Join 0",
+                "type": "JOIN",
+                "top": 111.9,
+                "left": 252
+            },
+            "OUTPUT0": {
+                "label": "Output 0",
+                "type": "OUTPUT",
+                "top": 112,
+                "left": 392
+            }
+        },
+        "connectors": [
+            {
+                "source": "LOAD_DATASET1",
+                "target": "JOIN0"
+            },
+            {
+                "source": "LOAD_DATASET0",
+                "target": "JOIN0"
+            },
+            {
+                "source": "JOIN0",
+                "target": "OUTPUT0"
+            }
+        ],
+        "hiddenColumns": []
+    }
+}

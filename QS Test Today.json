@@ -1,0 +1,516 @@
+{
+    "version": "59.0",
+    "nodes": {
+        "LOAD_DATASET0": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "connectionName": "SFDC_LOCAL",
+                    "label": "Account",
+                    "sourceObjectName": "Account",
+                    "type": "connectedDataset"
+                },
+                "fields": [
+                    "Id",
+                    "Name",
+                    "Avg_Payment_Days__c"
+                ],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "LOAD_DATASET1": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "connectionName": "SFDC_LOCAL",
+                    "label": "Quality_Specification__c",
+                    "sourceObjectName": "Quality_Specification__c",
+                    "type": "connectedDataset"
+                },
+                "fields": [
+                    "Id",
+                    "Name"
+                ],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "LOAD_DATASET2": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "connectionName": "SFDC_LOCAL",
+                    "label": "Product_Description__c",
+                    "sourceObjectName": "Product_Description__c",
+                    "type": "connectedDataset"
+                },
+                "fields": [
+                    "Id",
+                    "Name",
+                    "RecordTypeId",
+                    "Standard_Text__c",
+                    "Actual_Units__c",
+                    "Custom_Opportunity_Product__c",
+                    "Product__c",
+                    "Quality_Specification__c",
+                    "Score__c",
+                    "Max_Score__c",
+                    "File_Link__c",
+                    "Product_Name__c"
+                ],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "LOAD_DATASET3": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "connectionName": "SFDC_LOCAL",
+                    "label": "Opportunity",
+                    "sourceObjectName": "Opportunity",
+                    "type": "connectedDataset"
+                },
+                "fields": [
+                    "Avg_Score_text__c",
+                    "Id",
+                    "AccountId",
+                    "Name",
+                    "Average_Score__c",
+                    "Opportunity_File_Link__c"
+                ],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "LOAD_DATASET4": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "connectionName": "SFDC_LOCAL",
+                    "label": "Custom_Opportunity_Product__c",
+                    "sourceObjectName": "Custom_Opportunity_Product__c",
+                    "type": "connectedDataset"
+                },
+                "fields": [
+                    "Id",
+                    "Name",
+                    "Opportunity__c",
+                    "Account__c",
+                    "Product__c",
+                    "Basic_value_1__c",
+                    "Basic_Value_2__c",
+                    "Quantity__c",
+                    "UOM__c",
+                    "Rate_without_GST__c",
+                    "TDS_REC_ERP__c",
+                    "TDS_DISCOUNT__c",
+                    "Total_Score__c",
+                    "Payment_Days__c",
+                    "PD_Count__c",
+                    "Average_Score__c",
+                    "Invoice_Number__c",
+                    "Products__c"
+                ],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "LOAD_DATASET5": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "connectionName": "SFDC_LOCAL",
+                    "label": "Product2",
+                    "sourceObjectName": "Product2",
+                    "type": "connectedDataset"
+                },
+                "fields": [
+                    "Id",
+                    "Name",
+                    "RecordTypeId",
+                    "BRS_Code__c",
+                    "UOM__c",
+                    "Category__c",
+                    "Cat_1__c",
+                    "Cat_2__c",
+                    "Groups__c",
+                    "Sub_Group_1__c",
+                    "Sub_Group_2__c",
+                    "Brand__c"
+                ],
+                "sampleDetails": {
+                    "sortBy": [],
+                    "type": "TopN"
+                }
+            },
+            "sources": []
+        },
+        "JOIN0": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "Custom_Opportunity_Product__c"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "Custom_Opp"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [],
+                    "ignoreMissingFields": true,
+                    "mode": "DROP"
+                }
+            },
+            "sources": [
+                "LOAD_DATASET2",
+                "LOAD_DATASET4"
+            ]
+        },
+        "JOIN1": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "Custom_Opp.Opportunity__c"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "Opportunit"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [],
+                    "ignoreMissingFields": true,
+                    "mode": "DROP"
+                }
+            },
+            "sources": [
+                "JOIN0",
+                "LOAD_DATASET3"
+            ]
+        },
+        "JOIN2": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "Opportunit.AccountId"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "Account"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [],
+                    "ignoreMissingFields": true,
+                    "mode": "DROP"
+                }
+            },
+            "sources": [
+                "JOIN1",
+                "LOAD_DATASET0"
+            ]
+        },
+        "JOIN3": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "Product__c"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "Product2"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [],
+                    "ignoreMissingFields": true,
+                    "mode": "DROP"
+                }
+            },
+            "sources": [
+                "JOIN2",
+                "LOAD_DATASET5"
+            ]
+        },
+        "JOIN4": {
+            "action": "join",
+            "parameters": {
+                "joinType": "LOOKUP",
+                "leftKeys": [
+                    "Quality_Specification__c"
+                ],
+                "rightKeys": [
+                    "Id"
+                ],
+                "rightQualifier": "Quality_Sp"
+            },
+            "schema": {
+                "fields": [],
+                "slice": {
+                    "fields": [],
+                    "ignoreMissingFields": true,
+                    "mode": "DROP"
+                }
+            },
+            "sources": [
+                "JOIN3",
+                "LOAD_DATASET1"
+            ]
+        },
+        "FORMULA0": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "substr(File_Link__c, 9)",
+                        "label": "File Link Formula",
+                        "name": "File_Link__c_formula",
+                        "precision": 255,
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "JOIN4"
+            ]
+        },
+        "FORMULA1": {
+            "action": "formula",
+            "parameters": {
+                "expressionType": "SQL",
+                "fields": [
+                    {
+                        "defaultValue": "",
+                        "formulaExpression": "substr(\"Opportunit.Opportunity_File_Link__c\",9)",
+                        "label": "Opportunity File Link Formula",
+                        "name": "Opportunit.Opportunity_File_Link__c_formula",
+                        "precision": 255,
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "FORMULA0"
+            ]
+        },
+        "OUTPUT0": {
+            "action": "save",
+            "parameters": {
+                "dataset": {
+                    "folderName": "Swastik_App",
+                    "label": "QSTestToday",
+                    "name": "QSTestToday",
+                    "type": "analyticsDataset"
+                },
+                "fields": [],
+                "measuresToCurrencies": []
+            },
+            "sources": [
+                "FORMULA1"
+            ]
+        }
+    },
+    "ui": {
+        "nodes": {
+            "LOAD_DATASET0": {
+                "label": "Account",
+                "type": "LOAD_DATASET",
+                "top": 252,
+                "left": 392.3,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "LOAD_DATASET1": {
+                "label": "Quality_Specification__c",
+                "type": "LOAD_DATASET",
+                "top": 251.8,
+                "left": 672.1,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "LOAD_DATASET2": {
+                "label": "Product_Description__c",
+                "type": "LOAD_DATASET",
+                "top": 111.30000000000001,
+                "left": 112.69999999999999,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "LOAD_DATASET3": {
+                "label": "Opportunity",
+                "type": "LOAD_DATASET",
+                "top": 251.7,
+                "left": 252.3,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "LOAD_DATASET4": {
+                "label": "Custom_Opportunity_Product__c",
+                "type": "LOAD_DATASET",
+                "top": 252.39999999999998,
+                "left": 112.1,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "LOAD_DATASET5": {
+                "label": "Product2",
+                "type": "LOAD_DATASET",
+                "top": 252,
+                "left": 532.1,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "JOIN0": {
+                "label": "Join 0",
+                "type": "JOIN",
+                "top": 112,
+                "left": 252
+            },
+            "JOIN1": {
+                "label": "Join 1",
+                "type": "JOIN",
+                "top": 112,
+                "left": 392
+            },
+            "JOIN2": {
+                "label": "Join 2",
+                "type": "JOIN",
+                "top": 112,
+                "left": 532.3
+            },
+            "JOIN3": {
+                "label": "Join 3",
+                "type": "JOIN",
+                "top": 112,
+                "left": 672
+            },
+            "JOIN4": {
+                "label": "Join 4",
+                "type": "JOIN",
+                "top": 112,
+                "left": 812
+            },
+            "TRANSFORM0": {
+                "label": "Transform 0",
+                "type": "TRANSFORM",
+                "top": 112,
+                "left": 952,
+                "graph": {
+                    "FORMULA0": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "Formula"
+                    },
+                    "FORMULA1": {
+                        "parameters": {
+                            "type": "BASE_FORMULA_UI"
+                        },
+                        "label": "Formula"
+                    }
+                },
+                "connectors": [
+                    {
+                        "source": "FORMULA0",
+                        "target": "FORMULA1"
+                    }
+                ]
+            },
+            "OUTPUT0": {
+                "label": "Output 0",
+                "type": "OUTPUT",
+                "top": 112,
+                "left": 1092
+            }
+        },
+        "connectors": [
+            {
+                "source": "LOAD_DATASET2",
+                "target": "JOIN0"
+            },
+            {
+                "source": "LOAD_DATASET4",
+                "target": "JOIN0"
+            },
+            {
+                "source": "JOIN0",
+                "target": "JOIN1"
+            },
+            {
+                "source": "LOAD_DATASET3",
+                "target": "JOIN1"
+            },
+            {
+                "source": "JOIN1",
+                "target": "JOIN2"
+            },
+            {
+                "source": "LOAD_DATASET0",
+                "target": "JOIN2"
+            },
+            {
+                "source": "JOIN2",
+                "target": "JOIN3"
+            },
+            {
+                "source": "LOAD_DATASET5",
+                "target": "JOIN3"
+            },
+            {
+                "source": "JOIN3",
+                "target": "JOIN4"
+            },
+            {
+                "source": "LOAD_DATASET1",
+                "target": "JOIN4"
+            },
+            {
+                "source": "JOIN4",
+                "target": "TRANSFORM0"
+            },
+            {
+                "source": "TRANSFORM0",
+                "target": "OUTPUT0"
+            }
+        ],
+        "hiddenColumns": []
+    }
+}
